@@ -25,12 +25,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     
 }
 
 .header-child{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -54,12 +54,12 @@ body{
     }
     @include laptop {
         font-size: 11rem;
-        letter-spacing: 4rem;
+        letter-spacing:  4rem;
     }
-    @include desktop {
-        font-size: 14rem; 
-        letter-spacing: 5rem;
-    }
+    // @include desktop {
+    //     font-size: 14rem; 
+    //     letter-spacing: 5rem;
+    // }
 }
 
 
@@ -76,9 +76,9 @@ body{
     @include tablet {
         font-size: 4rem; 
     }
-    @include desktop {
-        font-size: 7rem; 
-    }
+    // @include desktop {
+    //     font-size: 7rem; 
+    // }
     @include laptop {
         font-size: 5rem;
     }
