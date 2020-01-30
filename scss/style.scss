@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-color: F4EAD0;
+    background-color: $primary;
     cursor: pointer;
 }
 
@@ -43,7 +43,7 @@ body{
     font-family: sans-serif;
     letter-spacing: 2rem;
     text-transform: uppercase;
-    font-family: 'Bangers', cursive;
+    font-family: $font;
     animation-name: slam;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
@@ -56,10 +56,7 @@ body{
         font-size: 11rem;
         letter-spacing:  4rem;
     }
-    // @include desktop {
-    //     font-size: 14rem; 
-    //     letter-spacing: 5rem;
-    // }
+    
 }
 
 
@@ -69,16 +66,13 @@ body{
     font-size: 3rem;
     font-family: sans-serif;
     -webkit-text-stroke: 1px black;
-    font-family: 'Bangers', cursive;
+    font-family: $font;
     animation-name: slam;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
     @include tablet {
         font-size: 4rem; 
     }
-    // @include desktop {
-    //     font-size: 7rem; 
-    // }
     @include laptop {
         font-size: 5rem;
     }
@@ -108,12 +102,20 @@ body{
 
 .explore{
     background-color: beige; 
-    font-size: 5vh;
-    border-radius: 15px;
-    padding: 2vh; 
-    font-family: 'Bangers', cursive;  
+    font-size: 2.5rem;
+    border-radius: 10px;
+    padding: 1rem; 
+    font-family: $font;  
     text-decoration: none;
     color: black;
+    @include tablet {
+        font-size: 3rem;
+        padding: 1.5rem;
+    }
+    @include laptop{
+        font-size: 4rem;  
+        padding: 2rem;
+    }
 }
 
 .explore:hover {

@@ -1,19 +1,18 @@
 .city-title{
-    font-size: 10vh;
+    font-size: 6rem;
     color: black;
     text-align: center;
     text-shadow: 3px 3px rgb(255, 255, 255);
-    // background-color: rgba(181, 250, 255, 0.205);
     margin:auto; 
-    margin-top: 5vh;
+    margin-top: 3rem;
     font-family: 'Bangers', cursive;
 }
 
 
 .city-parent{
     display: flex;
-    flex-direction: row;
-    height: 70vh; 
+    flex-direction: column;
+    height: 50rem; 
     justify-content: space-between;
     align-items: center; 
     overflow: hidden;
@@ -23,12 +22,12 @@
 .city-child{
     padding: 2vh;
     flex: 1;
-    // padding: 1.5vw;
+     padding: 1.5vw;
 }
 
 .border{
     height: 100vh;
-    border: 10px solid rgba(0, 0, 0, 0.301);
+    // border: 10px solid rgba(0, 0, 0, 0.301);
     border-bottom: none;
     // border-top: none; 
 }
