@@ -2,34 +2,48 @@
     font-size: 6rem;
     color: black;
     text-align: center;
-    text-shadow: 3px 3px rgb(255, 255, 255);
+    // text-shadow: 3px 3px rgb(255, 255, 255);
     margin:auto; 
-    margin-top: 3rem;
-    font-family: 'Bangers', cursive;
+    margin-top: 8rem;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    text-decoration:underline overline; 
+    letter-spacing: .5rem;
+    transition: all 1.0s;
 }
 
-
-.city-parent{
-    display: flex;
-    flex-direction: column;
-    height: 50rem; 
-    justify-content: space-between;
-    align-items: center; 
-    overflow: hidden;
-    margin-top: 10vh;
+[class*="col-"] {
+     display:flex; 
+     float: left;  
+     padding: 2rem; 
+     width: 90%;  
+     align-items: center;
+     justify-content: center;
+    @include laptop{
+        height: 80vh; 
+     }
 }
 
 .city-child{
-    padding: 2vh;
-    flex: 1;
-    padding: 1.5vw;
+    max-width: 100%; 
+  }
+
+
+
+.crap{
+    position: absolute;
+    color:red; 
+    font-size: 4rem;
+    opacity: 0;
 }
 
-.border{
-    height: 100vh;
-    // border: 10px solid rgba(0, 0, 0, 0.301);
-    border-bottom: none;
-    // border-top: none; 
-}
+    
 
-
+.city-child:hover {
+    opacity: 0.3; 
+  //  transform: rotateY(180deg);
+    
+  }
+   .city-child:hover +.crap{
+       opacity: 1;
+    }

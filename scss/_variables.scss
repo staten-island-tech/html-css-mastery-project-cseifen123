@@ -1,9 +1,13 @@
 $primary: F4EAD0; 
-$font: 'Bangers', cursive; 
+$font-1: 'Bangers', cursive; 
+$font-2:'Anton', sans-serif;
+
 
 $tablet: 600px;
 $desktop: 1100px;
 $laptop: 900px; 
+//900
+
 
 
 @mixin desktop{
@@ -12,8 +16,9 @@ $laptop: 900px;
     }
   }
   
-  @mixin laptop{
-    @media(min-width: #{$laptop}) {
+@mixin laptop{
+    @media only screen and (min-width: #{$laptop}) {
+       .col-t1{width: 30%;}
       @content;
     }
   }
