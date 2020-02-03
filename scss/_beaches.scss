@@ -1,0 +1,16 @@
+
+[class*="col-"] {
+    display:flex; 
+    float: left;  
+    padding: 2rem; 
+    width: 90%;  
+    align-items: center;
+    justify-content: center;
+    @include laptop{
+       height: 80vh; 
+    }
+}
+
+.parent{
+    height:100vh; 
+}

@@ -30,7 +30,7 @@
 
 
 
-.crap{
+.words{
     position: absolute;
     color:red; 
     font-size: 4rem;
@@ -44,6 +44,6 @@
   //  transform: rotateY(180deg);
     
   }
-   .city-child:hover +.crap{
+   .city-child:hover +.words{
        opacity: 1;
     }

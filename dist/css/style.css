@@ -40,7 +40,7 @@
   max-width: 100%;
 }
 
-.crap {
+.words {
   position: absolute;
   color: red;
   font-size: 4rem;
@@ -51,8 +51,36 @@
   opacity: 0.3;
 }
 
-.city-child:hover + .crap {
+.city-child:hover + .words {
   opacity: 1;
+}
+
+[class*="col-"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  padding: 2rem;
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+  [class*="col-"] {
+    height: 80vh;
+  }
+  [class*="col-"] .col-t1 {
+    width: 30%;
+  }
+}
+
+.parent {
+  height: 100vh;
 }
 
 html {
