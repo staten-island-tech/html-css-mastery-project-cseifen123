@@ -42,8 +42,8 @@
 
 .words {
   position: absolute;
-  color: red;
-  font-size: 4rem;
+  color: black;
+  font-size: 3rem;
   opacity: 0;
 }
 
@@ -53,6 +53,12 @@
 
 .city-child:hover + .words {
   opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .city-child:active {
+    opacity: 0.3;
+  }
 }
 
 [class*="col-"] {

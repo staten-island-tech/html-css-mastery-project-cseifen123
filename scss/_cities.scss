@@ -26,14 +26,13 @@
 
 .city-child{
     max-width: 100%; 
+    // transition: all 1.0s;
   }
-
-
 
 .words{
     position: absolute;
-    color:red; 
-    font-size: 4rem;
+    color:black; 
+    font-size: 3rem;
     opacity: 0;
 }
 
@@ -41,9 +40,17 @@
 
 .city-child:hover {
     opacity: 0.3; 
-  //  transform: rotateY(180deg);
-    
-  }
-   .city-child:hover +.words{
-       opacity: 1;
+    @include tablet{
+    .city-child:active{
+        opacity: 0.3;
     }
+  //  transform: rotateY(180deg);
+  }
+.city-child:hover +.words{
+       opacity: 1;
+       @include tablet{
+        .city-child:active +.words{
+            opacity:1;
+        }
+       }
+}
