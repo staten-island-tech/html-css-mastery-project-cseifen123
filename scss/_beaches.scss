@@ -12,5 +12,12 @@
 }
 
 .parent{
-    height:100vh; 
+    height:100vh;   
+}
+.box{
+    height: 30vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    background-color: red; 
 }

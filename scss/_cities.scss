@@ -40,17 +40,17 @@
 
 .city-child:hover {
     opacity: 0.3; 
-    @include tablet{
-    .city-child:active{
-        opacity: 0.3;
-    }
+    // @include tablet{
+    // .city-child:active{
+    //     opacity: 0.3;
+    // }
   //  transform: rotateY(180deg);
   }
 .city-child:hover +.words{
        opacity: 1;
-       @include tablet{
-        .city-child:active +.words{
-            opacity:1;
-        }
-       }
+    //    @include tablet{
+    //     .city-child:active +.words{
+    //         opacity:1;
+    //     }
+    //    }
 }
