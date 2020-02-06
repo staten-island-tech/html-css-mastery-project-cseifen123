@@ -1,23 +1,10 @@
-
-[class*="col-"] {
-    display:flex; 
-    float: left;  
-    padding: 2rem; 
-    width: 90%;  
-    align-items: center;
-    justify-content: center;
-    @include laptop{
-       height: 80vh; 
-    }
-}
-
 .parent{
     height:100vh;   
 }
 .box{
-    height: 30vh; 
     display: flex; 
     align-items: center; 
     justify-content: flex-start;
-    background-color: red; 
+    flex-direction: column; 
 }
+

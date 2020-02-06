@@ -2,6 +2,7 @@
     font-size: 6rem;
     color: black;
     text-align: center;
+ 
     // text-shadow: 3px 3px rgb(255, 255, 255);
     margin:auto; 
     margin-top: 8rem;
@@ -10,7 +11,8 @@
     text-decoration:underline overline; 
     letter-spacing: .5rem;
     transition: all 1.0s;
-}
+    clip-path: polygon(13% 0, 100% 0%, 85% 100%, 0% 100%);
+   }
 
 [class*="col-"] {
      display:flex; 
