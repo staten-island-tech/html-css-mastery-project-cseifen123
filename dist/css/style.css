@@ -14,6 +14,15 @@
           clip-path: polygon(13% 0, 100% 0%, 85% 100%, 0% 100%);
 }
 
+.city-title:hover {
+  -webkit-transform: translate(-50, -50);
+          transform: translate(-50, -50);
+  -webkit-transition: all 1.0s;
+  transition: all 1.0s;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
 [class*="col-"] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +40,7 @@
 
 @media only screen and (min-width: 900px) {
   [class*="col-"] {
-    height: 80vh;
+    height: 60vh;
   }
   [class*="col-"] .col-t1 {
     width: 30%;
@@ -57,20 +66,25 @@
   opacity: 1;
 }
 
+.section-1 {
+  height: 120vh;
+}
+
 .parent {
   height: 100vh;
 }
 
 .box {
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -283,9 +297,5 @@ body {
   transition: all 1.0s;
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
-}
-
-.section-1 {
-  height: 120vh;
 }
 /*# sourceMappingURL=style.css.map */
