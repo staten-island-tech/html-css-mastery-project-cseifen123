@@ -20,24 +20,47 @@
         </div>
    </header>
 
-   <section id="cities" class="section-1" >
-           <div class="city-title ">Cities</div>
-           <div class="col-t1"><img src="media/sphinx.jpg" class="city-child"></div>
-            <div class="words">Giza </div>
-           <div class="col-t1"><img src="media/alexandria2.jpg" class="city-child"></div> 
-            <div class="words">Alexandria</div>
-           <div class="col-t1"><img src="media/luxor2.jpg" class="city-child"></div>
-            <div class="words">Luxor</div>
-            <!-- words not showing, ipad size does not work -->
+<section id="cities" class="section-1">
+    <div class="city-title" >
+        <a class="popup1"href="#popup1">Cities</a>
+    </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Cities</h2>
+            <a class="close" href="#cities">&times;</a>
+            <div class="content">
+            Egypt has some really cool cities. Check it out!
+            </div>
+        </div>
+    </div>
+     <div class="col-t1">
+        <img src="media/sphinx.jpg" class="city-child">
+        <div class="word"> <span class="word-title">Giza</span>
+            <div class="word-2"> This city is the site of some of the most impressive ancient monuments in the world! </div>  
+        </div>  
+    </div>
+     <div class="col-t1">
+        <img src="media/alexandria2.jpg" class="city-child"> 
+            <div class="word"><span class="word-title">Alexandria</span>
+                <div class="word-2">Known for its history and beaches, Alexandria is one of Egypt's most famous tourist destnations.</div>
+            </div>
+    </div>
+    <div class="col-t1">
+        <img src="media/luxor2.jpg" class="city-child">
+        <div class="word"><span class="word-title">Luxor</span>
+            <div class="word-2">Located east of the Nile River, this city is is a mark of ancient Egyptian culture.</div>
+        </div>
+    </div>
+            <!-- when you hover over words it does not show, ipad size does not work -->
    </section>
 
    <section id="beaches" class="parent">
-       <div>Title</div>
+       <!-- <div>Title</div>
        <div class="box">
           <img src="media/marsa2.jpg" >
           <img src="media/sharm2.jpg" >
           <img src="media/mahmya2.jpg">
-      </div>
+      </div> -->
     </section>
 
    <section id="food" class="parent">

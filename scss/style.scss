@@ -1,5 +1,5 @@
 @import "_variables.scss";
-@import "_cities.scss";
+@import"_cities.scss";
 @import "_beaches.scss";
 // @import "_navigation.scss";
 
@@ -25,14 +25,16 @@ body{
     ),  url(../media/pyramids.jpg);
     position: relative; 
     height: 100vh;
-    background-size: cover;
     background-position: top;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    
-    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:none;
 }
 
 .header-parent{
