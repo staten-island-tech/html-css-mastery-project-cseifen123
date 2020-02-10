@@ -134,10 +134,10 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 20px;
-  position: absolute;
 }
 
 .word {
+  position: absolute;
   color: black;
   font-size: 2rem;
   opacity: 0;
