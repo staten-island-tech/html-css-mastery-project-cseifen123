@@ -1,7 +1,9 @@
 .section-1{
-    height: 120vh; 
+    @include laptop{
+     height: 120vh; 
+     //on ipad pro it follows height of laptop
   }
-
+}
 .place-holder{
     height:1vh;
 }
@@ -88,7 +90,7 @@
     overflow: auto;
   }
 
-.main-cont{
+.main-content{
     display:flex;
     flex-direction:column;
     @include laptop{

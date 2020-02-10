@@ -38,6 +38,9 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
     }
+    @include tablet {
+        background-size: cover;
+    }
 }
 
 .header-parent{

@@ -1,5 +1,7 @@
-.section-1 {
-  height: 120vh;
+@media only screen and (min-width: 900px) {
+  .section-1 {
+    height: 120vh;
+  }
 }
 
 .place-holder {
@@ -98,7 +100,7 @@
   overflow: auto;
 }
 
-.main-cont {
+.main-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +111,7 @@
 }
 
 @media only screen and (min-width: 900px) {
-  .main-cont {
+  .main-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -193,25 +195,66 @@
   display: inline-block;
 }
 
-.parent {
-  height: 100vh;
+.section-2 {
+  height: 120vh;
 }
 
-.box {
-  height: 50vh;
+.main-content-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: red;
+}
+
+@media only screen and (min-width: 900px) {
+  .main-content-2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.image {
+  background-image: url(../media/cover.jpg);
+  opacity: .5;
+  position: relative;
+  height: 120vh;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin: none;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 900px) {
+  .image {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 600px) {
+  .image {
+    background-size: cover;
+  }
 }
 
 html {
@@ -255,6 +298,12 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 600px) {
+  .header {
     background-size: cover;
   }
 }

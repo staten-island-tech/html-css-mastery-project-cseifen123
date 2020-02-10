@@ -1,13 +1,36 @@
-.parent{
-    height:100vh;   
+.section-2{
+    height:120vh;
 }
-.box{
-    height:50vh; 
-    display: flex; 
+
+.main-content-2{
+    display:flex;
+    flex-direction: column;
+    background-color:red;
+    @include laptop{
+        flex-direction:row; 
+    }
+}
+
+.image{
+    background-image: url(../media/cover.jpg);
+    opacity: .5;
+    position: relative; 
+    height: 120vh;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center; 
-    flex-direction: column; 
+    margin:none;
+    background-size: cover;
+    @include laptop{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @include tablet {
+        background-size: cover;
+    }
 }
-
-
 
