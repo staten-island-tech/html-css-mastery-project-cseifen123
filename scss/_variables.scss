@@ -18,7 +18,7 @@ $laptop: 900px;
   
 @mixin laptop{
     @media only screen and (min-width: #{$laptop}) {
-       .col-t1{width: 30%;}
+      //  .col-t1{width: 30%;}
       @content;
     }
   }

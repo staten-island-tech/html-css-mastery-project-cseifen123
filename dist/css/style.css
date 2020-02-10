@@ -1,17 +1,34 @@
+.section-1 {
+  height: 120vh;
+}
+
+.place-holder {
+  height: 1vh;
+}
+
 .city-title {
   width: 20rem;
-  font-size: 6rem;
+  font-size: 4rem;
   color: black;
   text-align: center;
   border: 2px solid black;
   border-radius: 10% / 50%;
   margin: auto;
-  margin-top: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   letter-spacing: .5rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media only screen and (min-width: 900px) {
+  .city-title {
+    font-size: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
 }
 
 .popup1 {
@@ -20,7 +37,7 @@
 }
 
 .city-title:hover {
-  background-color: grey;
+  background-color: rgba(168, 168, 168, 0.658);
 }
 
 .overlay {
@@ -80,28 +97,36 @@
   overflow: auto;
 }
 
+.main-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 900px) {
+  .main-cont {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 [class*="col-"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left;
   padding: 2rem;
-  width: 90%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media only screen and (min-width: 900px) {
-  [class*="col-"] {
-    height: 60vh;
-  }
-  [class*="col-"] .col-t1 {
-    width: 30%;
-  }
 }
 
 .city-child {
@@ -127,9 +152,6 @@
     font-size: 3rem;
     width: 30%;
   }
-  .word .col-t1 {
-    width: 30%;
-  }
 }
 
 @media (min-width: 600px) {
@@ -144,15 +166,12 @@
 }
 
 .word-2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 @media only screen and (min-width: 900px) {
   .word-2 {
     font-size: 2rem;
-  }
-  .word-2 .col-t1 {
-    width: 30%;
   }
 }
 
@@ -162,16 +181,12 @@
   }
 }
 
-.city-child:hover {
+.col-t1:hover > .city-child {
   opacity: 0.3;
 }
 
-.city-child:hover + .word {
+.col-t1:hover > .word {
   opacity: 1;
-}
-
-.section-1 {
-  height: 120vh;
 }
 
 .parent {
@@ -208,12 +223,6 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 900px) {
-  .col-t1 {
-    width: 30%;
-  }
-}
-
 .header {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(244, 234, 208, 0.356))), url(../media/pyramids.jpg);
   background-image: linear-gradient(to right bottom, rgba(244, 234, 208, 0.356)), url(../media/pyramids.jpg);
@@ -233,11 +242,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: none;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 900px) {
+  .header {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .header-parent {
@@ -289,9 +304,6 @@ body {
     font-size: 11rem;
     letter-spacing: 4rem;
   }
-  .text-box .col-t1 {
-    width: 30%;
-  }
 }
 
 .subtitle {
@@ -316,9 +328,6 @@ body {
 @media only screen and (min-width: 900px) {
   .subtitle {
     font-size: 4rem;
-  }
-  .subtitle .col-t1 {
-    width: 30%;
   }
 }
 
@@ -392,9 +401,6 @@ body {
   .explore {
     font-size: 3rem;
     padding: 1rem;
-  }
-  .explore .col-t1 {
-    width: 30%;
   }
 }
 
