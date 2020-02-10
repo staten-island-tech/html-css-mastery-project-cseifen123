@@ -108,10 +108,11 @@
     max-width: 100%; 
     transition: all 0.3s;
     border-radius: 20px;
+    position: absolute;
 }
 
 .word{
-    position: absolute;
+    // position: absolute;
     color:black; 
     font-size: 2rem;
     opacity: 0;
