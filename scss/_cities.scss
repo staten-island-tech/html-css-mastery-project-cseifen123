@@ -45,6 +45,7 @@
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
+    z-index: 2;
   }
 .overlay:target {
     visibility: visible;
@@ -60,6 +61,7 @@
     position: relative;
     transition: all 5s ease-in-out;
     font-size: 2rem;
+ 
   }
   
 .popup h2 {
@@ -99,7 +101,7 @@
     padding: 2rem; 
     align-items: center;
     justify-content: center;
-    z-index:2;
+    z-index:1;
     // @include laptop{
     //     height: 60vh; 
     //  }
