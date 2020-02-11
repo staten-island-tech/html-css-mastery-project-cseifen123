@@ -1,5 +1,7 @@
 .section-2{
-    height:120vh;
+    @include laptop{
+        height:100vh;
+}
 }
 
 .main-content-2{
@@ -31,6 +33,9 @@
     }
     @include tablet {
         background-size: cover;
+        background-attachment: none;
+        background-position: none;
+        background-repeat: none;
     }
 }
 

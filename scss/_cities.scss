@@ -1,8 +1,5 @@
 .section-1{
-    @include laptop{
-     height: 120vh; 
-     //on ipad pro it follows height of laptop
-  }
+ height:120vh;
 }
 .place-holder{
     height:1vh;
