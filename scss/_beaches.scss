@@ -1,23 +1,75 @@
 .section-2{
-    @include laptop{
-        height:100vh;
-}
+    min-height: 120vh; 
+//     @include laptop{
+//         height:100vh;
+// }
 }
 
 .main-content-2{
+    background-image: linear-gradient(to right bottom,
+    rgba(244, 234, 208, 0.356),
+    ),  url(../media/pillar.jpg);
     display:flex;
+    line-height: 2rem;
+    font-size: 2rem;
+    margin-top:4rem;
     flex-direction: column;
-    background-color:red;
+    color: black;
+    background-color:rgba(128, 128, 128, 0.39);
+    align-items:center;
+    justify-content:center;
+    text-align:center;
     @include laptop{
+        height:30vh;
         flex-direction:row; 
+        margin:none;
+        line-height: 3rem;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @include tablet{
+        margin-top:10rem;
+    }
+}
+
+.card-side{
+
+}
+
+.card-side-front{
+
+}
+
+.card-side{
+    
+}
+.about{
+    width: 20rem;
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    border:2px solid black; 
+    border-radius: 10% / 50%;
+    // text-shadow: 3px 3px rgb(255, 255, 255);
+    margin:auto; 
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    transition: all 0.2s;
+    @include laptop{
+        font-size:6rem;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
     }
 }
 
 .image{
-    background-image: url(../media/cover.jpg);
     opacity: .5;
     position: relative; 
-    height: 120vh;
     background-position: top;
     display: flex;
     flex-direction: column;
@@ -25,17 +77,5 @@
     justify-content: center; 
     margin:none;
     background-size: cover;
-    @include laptop{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
-    @include tablet {
-        background-size: cover;
-        background-attachment: none;
-        background-position: none;
-        background-repeat: none;
-    }
-}
 
