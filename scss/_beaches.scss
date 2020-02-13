@@ -1,49 +1,59 @@
 .section-2{
-    min-height: 120vh; 
+    min-height:100vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(244, 234, 208, 0.356),
+    ),  url(../media/pillar.jpg);  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 //     @include laptop{
 //         height:100vh;
 // }
 }
 
-.main-content-2{
-    background-image: linear-gradient(to right bottom,
-    rgba(244, 234, 208, 0.356),
-    ),  url(../media/pillar.jpg);
+
+.container-beach{
     display:flex;
+    flex-direction:column;
     line-height: 2rem;
     font-size: 2rem;
-    margin-top:4rem;
-    flex-direction: column;
     color: black;
-    background-color:rgba(128, 128, 128, 0.39);
+    height: 100vh; 
+    // min-height:100vh;
+    justify-content: space-around;
     align-items:center;
-    justify-content:center;
     text-align:center;
     @include laptop{
-        height:30vh;
-        flex-direction:row; 
-        margin:none;
+        flex-direction:row;
+        // min-height:100vh;
         line-height: 3rem;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        justify-content:center;
+        align-items:center;
     }
     @include tablet{
-        margin-top:10rem;
+        // margin-top:10rem;
     }
 }
 
-.card-side{
-
+.info-1{
+    background-color: red;
+    height:100%;
+    text-align:center;
+    @include laptop{
+        width:50%;
+    }
 }
 
-.card-side-front{
-
-}
-
-.card-side{
-    
+.info-2{
+    background-color:green;
+    height:100%;
+    width:100%;
+    text-align:center;
+    @include laptop{
+        width:50%;
+    }
 }
 .about{
     width: 20rem;
@@ -54,28 +64,21 @@
     border-radius: 10% / 50%;
     // text-shadow: 3px 3px rgb(255, 255, 255);
     margin:auto; 
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    // margin-top: 4rem;
+    // margin-bottom: 4rem;
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     letter-spacing: .5rem;
     transition: all 0.2s;
     @include laptop{
         font-size:6rem;
-        margin-top: 8rem;
-        margin-bottom: 8rem;
+        // margin-top: 8rem;
+        // margin-bottom: 8rem;
     }
 }
 
-.image{
-    opacity: .5;
-    position: relative; 
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    margin:none;
-    background-size: cover;
-    }
+.place-holder-2{
+    height:4rem;
+}
+
 
