@@ -32,15 +32,19 @@ body{
     justify-content: center; 
     margin:none;
     background-size: cover;
+    @include tablet {
+        background-size: cover;
+        background-image: linear-gradient(to right bottom,
+        rgba(244, 234, 208, 0.356),
+        ),  url(../media/pyramids.jpg);
+    }
     @include desktop{
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    @include tablet {
-        background-size: cover;
-    }
+   
 }
 
 .header-parent{

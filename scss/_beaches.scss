@@ -22,9 +22,9 @@
     color: black;
     height: 100vh; 
     // min-height:100vh;
-    justify-content: space-around;
+    justify-content:center;
     align-items:center;
-    text-align:center;
+    padding:2rem;
     @include laptop{
         flex-direction:row;
         // min-height:100vh;
@@ -38,23 +38,50 @@
 }
 
 .info-1{
-    background-color: red;
-    height:100%;
+    display:flex;
+    min-height:35%;
+    margin:2rem;
+    width:100%;
+    align-items:center;
     text-align:center;
+    border:2px solid black; 
+    border-radius: 20px;
+    // padding:3rem;
     @include laptop{
-        width:50%;
+        width:30%;
+        height:80%;
+
     }
 }
 
 .info-2{
-    background-color:green;
-    height:100%;
-    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border:2px solid black; 
+    border-radius: 20px;
     text-align:center;
+    height:60%;
+    width:100%;
+    margin:2rem;
+    // padding:3rem;
     @include laptop{
-        width:50%;
+        width:70%;
+        height:80%;
     }
 }
+
+.image-container{
+    display:flex;
+    flex-direction:row;
+}
+
+.image-container-2{
+    display:flex;
+    flex-direction:row;
+}
+
 .about{
     width: 20rem;
     font-size: 4rem;
