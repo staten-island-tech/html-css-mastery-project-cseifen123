@@ -1,13 +1,13 @@
 .section-2{
     min-height:100vh;
-    background-image: linear-gradient(to right bottom,
-    rgba(244, 234, 208, 0.356),
-    ),  url(../media/pillar.jpg);  
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    // background-image: linear-gradient(to right bottom,
+    // rgba(244, 234, 208, 0.356),
+    // ),  url(../media/pillar.jpg);  
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
     
 //     @include laptop{
 //         height:100vh;
@@ -155,6 +155,48 @@
 
 .place-holder-2{
     height:4rem;
+
+.card{
+    perspective:150rem;
+    -moz-perspective: 150rem;
+    position:relative;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
+.card-side{
+    height:500px;
+    width:300px;
+    font-size:15px;
+    color:white;
+    backface-visibility:hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+
+.card-side-front{
+    background-color:red;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    transition:all 1s;
+}
+.card-side-back{
+    background-color:blue;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+    transform: rotateY(-180deg);
+    transition:all 1s;
+}
+
+.card:hover .card-side-back{
+    transform:rotateY(0deg);
+}
+
+.section-3{
+    height:100vh;
+  }
 

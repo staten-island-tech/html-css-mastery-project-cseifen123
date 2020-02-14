@@ -425,6 +425,10 @@
   height: 4rem;
 }
 
+.section-3 {
+  height: 100vh;
+}
+
 html {
   margin: 0;
   padding: 0;

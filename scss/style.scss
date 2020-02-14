@@ -1,6 +1,6 @@
 @import "_variables.scss";
 @import"_cities.scss";
-@import "_beaches.scss";
+@import"_beaches.scss";
 // @import "_navigation.scss";
 
 html{
@@ -32,7 +32,7 @@ body{
     justify-content: center; 
     margin:none;
     background-size: cover;
-    clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    // clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
     @include tablet {
         background-size: cover;
     }
