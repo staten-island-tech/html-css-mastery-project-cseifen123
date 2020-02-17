@@ -63,22 +63,20 @@
 .image{
     display:flex;
     transition: all 1s;
-    padding-left:1rem;
-    padding-right:1rem;
-    padding-top:1rem;
-    padding-bottom: .5rem;
-    height:auto;
-    width:65%;
-     @include tablet{
-        height:auto;
-        width: 40%;
-    }
+    // padding-left:1rem;
+    // padding-right:1rem;
+     padding:2rem;
+    // padding-bottom: .5rem;
+    // height:auto;
+    // width:65%;
+    width:auto;
+    //  @include tablet{
+    //     // height:auto;
+      
+    // }
     @include laptop{
-        height:auto;
         width:auto;
-        padding-left:2rem;
-        padding-right:2rem;
-        padding-top:2rem;
+        padding:2rem;
     }
 }
 
@@ -86,6 +84,7 @@
     max-width:100%;
     border-radius:20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
 
 }
 
