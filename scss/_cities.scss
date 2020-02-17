@@ -1,8 +1,12 @@
-.section-1{
-  min-height:100vh;
-}
+// .section-1{
+// //   min-height:100vh;
+// }
 .place-holder{
     height:1vh;
+}
+
+.place-holder-3{
+    height:20vh;
 }
 .city-title{
     width: 20rem;
@@ -111,6 +115,7 @@
     max-width: 100%; 
     transition: all 0.3s;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     // position: absolute;
 }
 
