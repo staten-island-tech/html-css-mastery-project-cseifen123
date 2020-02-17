@@ -195,15 +195,10 @@
   display: inline-block;
 }
 
-.section-2 {
-  min-height: 100vh;
-}
-
 .parent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -239,14 +234,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50%;
-  width: 100%;
   background-color: sandybrown;
 }
 
 @media only screen and (min-width: 900px) {
   .container-1 {
-    width: 50%;
     height: 100vh;
   }
 }
@@ -265,14 +257,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50%;
-  width: 100%;
   background-color: #f0c49e;
 }
 
 @media only screen and (min-width: 900px) {
   .container-2 {
-    width: 50%;
     height: 100vh;
   }
 }
