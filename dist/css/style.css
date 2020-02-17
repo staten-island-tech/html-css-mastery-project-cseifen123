@@ -237,12 +237,6 @@
   background-color: sandybrown;
 }
 
-@media only screen and (min-width: 900px) {
-  .container-1 {
-    height: 100vh;
-  }
-}
-
 .container-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,12 +254,6 @@
   background-color: #f0c49e;
 }
 
-@media only screen and (min-width: 900px) {
-  .container-2 {
-    height: 100vh;
-  }
-}
-
 .place-holder-4 {
   height: 3vh;
 }
@@ -277,12 +265,16 @@
   -webkit-transition: all 1s;
   transition: all 1s;
   padding: 2rem;
-  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 900px) {
   .image {
-    width: auto;
     padding: 2rem;
   }
 }
@@ -295,14 +287,14 @@
 }
 
 .material-icons.icon {
-  font-size: 24px;
+  font-size: 30px;
   padding: 1.5rem;
   height: 1vh;
 }
 
 @media (min-width: 600px) {
   .material-icons.icon {
-    font-size: 30px;
+    font-size: 40px;
     padding: 2rem;
   }
 }

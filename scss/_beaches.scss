@@ -25,7 +25,7 @@
     // clip-path: polygon(83% 0, 93% 0, 100% 0, 100% 100%, 16% 100%, 9% 88%, 0 100%, 0 66%, 0 45%, 0 0);
     @include laptop{
         // width:50%;
-        height:100vh;  
+        // height:100vh;  
     }
 }
 .container-2{
@@ -40,7 +40,7 @@
     // clip-path: polygon(8% 12%, 16% 0, 100% 0, 100% 100%, 92% 89%, 83% 100%, 0 100%, 0 66%, 0 45%, 0 0);
     @include laptop{
         // width:50%;
-        height:100vh;
+        // height:100vh;
     }
 
 }
@@ -71,13 +71,15 @@
     // padding-bottom: .5rem;
     // height:auto;
     // width:65%;
-    width:auto;
+    // width:auto;
+    align-items: center;
+    justify-content: center;
     //  @include tablet{
     //     // height:auto;
       
     // }
     @include laptop{
-        width:auto;
+        // width:auto;
         padding:2rem;
     }
 }
@@ -86,8 +88,6 @@
     max-width:100%;
     border-radius:20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    
-
 }
 
 // .icon-container{
@@ -103,11 +103,11 @@
 
 
 .material-icons.icon{
-    font-size:24px;
+    font-size:30px;
     padding:1.5rem;
     height:1vh;
     @include tablet{
-        font-size:30px;
+        font-size:40px;
         padding: 2rem;
     }
     @include laptop{
@@ -126,8 +126,7 @@
    transform: rotateY(180deg);
    perspective:150rem;
   -moz-perspective: 150rem;
-   
-   
+
 }
 
 .image-replace{
