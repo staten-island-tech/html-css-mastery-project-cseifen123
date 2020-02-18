@@ -246,9 +246,8 @@
           flex-direction: row;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -272,9 +271,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -351,7 +349,7 @@
 .beach-title .color-title {
   background-color: sandybrown;
   border-radius: 20px 0px 0px 20px;
-  padding-left: 5.5rem;
+  padding-left: 3.1rem;
 }
 
 .beach-title .color-title-2 {
@@ -397,40 +395,18 @@
   }
 }
 
+.material-icons.icon-1 {
+  font-size: 35px;
+}
+
 .material-icons.icon:hover {
   color: blue;
 }
 
-.material-icons.icon-effect-up:hover ~ .image {
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
-}
-
 .material-icons.icon-effect-down:hover ~ .overlay-down {
   opacity: 1;
-  color: red;
-}
-
-.overlay-down {
-  position: absolute;
-  color: white;
-  font-size: 5rem;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.overlay-up {
-  position: absolute;
-  color: white;
-  font-size: 5rem;
+  -webkit-transition: ease-in 1.5s;
+  transition: ease-in 1.5s;
 }
 
 .material-icons.icon-effect-down:hover ~ .image {
@@ -443,6 +419,67 @@
           perspective: 1000px;
   -moz-perspective: 1000px;
   z-index: 0;
+}
+
+.overlay-down {
+  padding: 1rem;
+  position: absolute;
+  background-color: silver;
+  color: black;
+  font-size: 1.5rem;
+  width: 70%;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  opacity: 0;
+  border-radius: 20px;
+  font-family: "Anton", sans-serif;
+}
+
+@media only screen and (min-width: 900px) {
+  .overlay-down {
+    font-size: 3rem;
+    width: 30%;
+  }
+}
+
+.overlay-up {
+  padding: 1rem;
+  opacity: 0;
+  text-align: center;
+  width: 70%;
+  position: absolute;
+  font-size: 1.5rem;
+  background-color: silver;
+  color: black;
+  border-radius: 20px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 900px) {
+  .overlay-up {
+    font-size: 3rem;
+    width: 30%;
+  }
+}
+
+.material-icons.icon-effect-up:hover ~ .image {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: 0;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -moz-perspective: 1000px;
+  opacity: 0.7;
+}
+
+.material-icons.icon-effect-up:hover ~ .overlay-up {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: ease-in 1.5s;
+  transition: ease-in 1.5s;
 }
 
 html {

@@ -21,7 +21,7 @@
     display: flex;
     flex-direction:row;
     flex-wrap: wrap-reverse;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
     border-radius: 20px 20px 0px 0px;
     // min-height:50%;
@@ -39,9 +39,10 @@
     display:flex;
     flex-wrap: wrap-reverse;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
     border-radius:0px 0px 20px 20px;
+    
     // min-height:50%;
     // height:50%;
     // width:100%;
@@ -119,7 +120,8 @@
     .color-title{
         background-color:sandybrown;
         border-radius: 20px 0px 0px 20px;
-        padding-left: 5.5rem;
+        // padding-left: 5.5rem;
+        padding-left: 3.1rem;
     }
     .color-title-2{
         border-radius: 0px 20px 20px 0px;
@@ -169,22 +171,30 @@
     }
 }
 
+.material-icons.icon-1{
+    font-size:35px;
+}
+
 
 .material-icons.icon:hover{
     color:blue;
 }
 
 
-.material-icons.icon-effect-up:hover ~ .image{
-  transform: rotateZ(180deg);
-//    perspective:150rem;
-//   -moz-perspective: 150rem; 
-//    backface-visibility: hidden;
-}
+
 
 .material-icons.icon-effect-down:hover ~ .overlay-down{
     opacity:1;
-    color:red;
+    transition: ease-in 1.5s;
+}
+.material-icons.icon-effect-down:hover ~ .image{
+    filter: grayscale(100);
+    opacity:0.5;
+    transform: rotateY(180deg);
+    perspective:1000px;
+    -moz-perspective: 1000px; 
+    z-index:0;
+    
 }
 // .image:nth-child(4) {
 //     width: 100%;
@@ -195,36 +205,74 @@
 //     flex-grow: 1;
 //   }
 .overlay-down{
+    padding:1rem;
    position:absolute;
-   color:white;
-   font-size:5rem;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
+   background-color: silver;
+   color:black;
+   font-size:1.5rem;
+   width:70%;
+   text-align:center;
    flex-grow:1;
-//    width:100%;
-   
+   opacity: 0;
+   border-radius: 20px;
+   font-family:$font-2;
+   @include laptop{
+       font-size:3rem;
+       width:30%;
+   }
 }
 
 .overlay-up{
+    padding:1rem;
+    opacity:0;
+  text-align:center;
+    width:70%;
+   //flex-grow:1;
     position:absolute;
-   color:white;
-   font-size:5rem;
+    font-size:1.5rem;
+   background-color: silver;
+   color:black;
+   border-radius: 20px;
+    font-family:$font-2;
+   letter-spacing:1px;
+   @include laptop{
+       font-size:3rem;
+       width:30%;
+      // width:30%;
+   }
    // width:auto;
 }
-.material-icons.icon-effect-down:hover ~ .image{
-    filter: grayscale(100);
-    opacity:0.5;
+.material-icons.icon-effect-up:hover ~ .image{
     transform: rotateY(180deg);
-    perspective:1000px;
-    -moz-perspective: 1000px; 
     z-index:0;
-}
+   perspective:1000px;
+   -moz-perspective: 1000px; 
+   opacity:0.7;
+   
+   
+
+  }
+  .material-icons.icon-effect-up:hover ~ .overlay-up{
+    opacity:1;
+    z-index: 1;
+    transition: ease-in 1.5s;
+  }
 
 
-
-
-
+//   .img-hover-zoom {
+//  /* [1.1] Set it as per your need */
+//     overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+//   }
+  
+//   /* [2] Transition property for smooth transformation of images */
+//   .img-hover-zoom img {
+//     transition: transform .5s ease;
+//   }
+  
+//   /* [3] Finally, transforming the image when container gets hovered */
+//   .img-hover-zoom:hover img {
+//     transform: scale(1.5);
+//   }
 
 
 // .image-replace{
