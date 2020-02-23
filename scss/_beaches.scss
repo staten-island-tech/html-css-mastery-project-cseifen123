@@ -42,7 +42,6 @@
     justify-content:space-around;
     align-items:center;
     border-radius:0px 0px 20px 20px;
-    
     // min-height:50%;
     // height:50%;
     // width:100%;
@@ -103,7 +102,7 @@
 
 .image-child{
     transform-style: preserve-3d;
-    max-width:100%;
+   max-width:100%;
     border-radius:20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     
@@ -217,7 +216,7 @@
    border-radius: 20px;
    font-family:$font-2;
    @include laptop{
-       font-size:3rem;
+       font-size:2rem;
        width:30%;
    }
 }
@@ -235,8 +234,9 @@
    border-radius: 20px;
     font-family:$font-2;
    letter-spacing:1px;
+
    @include laptop{
-       font-size:3rem;
+       font-size:2rem;
        width:30%;
       // width:30%;
    }
@@ -248,8 +248,7 @@
    perspective:1000px;
    -moz-perspective: 1000px; 
    opacity:0.7;
-   
-   
+
 
   }
   .material-icons.icon-effect-up:hover ~ .overlay-up{

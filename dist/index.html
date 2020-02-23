@@ -20,7 +20,7 @@
             <a class="explore" href="#cities">Explore</a>
         </div>
    </header>
-   <!-- blue back when click, ipad pro page too long  -->
+   <!-- blue back when click, checklist and images video moving and  basic image gallery thing  -->
 
 <section id="cities" class="section-1">
     <div class="place-holder"></div>
@@ -59,7 +59,7 @@
     <div class="place-holder-3"></div>
    </section>
 
-   <section id="beaches" class="section-2">
+   <section id="favorites" class="section-2">
     <div class="beach-title"> 
         <span class="color-title">Our Top</span> 
         <span class="width"></span>
@@ -70,18 +70,17 @@
                 <div class="place-holder-4"></div>
                 <i class="material-icons icon icon-effect-up" onclick="" >thumb_up_alt </i>
                 <i class="material-icons icon icon-effect-down" onclick="" >thumb_down_alt</i>
-                <div class="overlay-up">Yay! We're glad you liked it as Egypt is defined by the Nile.
-                     please help us and wrap around . in christ name i pray amen</div> 
+                <div class="overlay-up">Yay! We're glad you liked it as Egypt is defined by the Nile.</div> 
                 <div class="image"><img src="media/nilecruise2.jpg" class="image-child" ></div> 
-                <div class="overlay-down"> WHY DONT YOU LIKE IT!! 
+                <div class="overlay-down">  Honestly, we're sad to hear you didn't like it, but we're sure you like the other one.
                 </div> 
+                <!-- WHY DON'T YOU LIKE IT?! -->
        </div>
        <div class="container-2">
                 <div class="place-holder-4"></div>
                 <i class="material-icons icon icon-effect-up" onclick="">thumb_up_alt </i>
                 <i class="material-icons icon icon-effect-down " onclick="">thumb_down_alt</i>
-                <div class="overlay-up">Thanks for liking it. This took way lomnger than expected. in fact, 
-                    you liking the picture, is equivalent to you appreciating my work on this web page. </div> 
+                <div class="overlay-up">Thanks for liking it... more words i havent thought of </div> 
                 <div class="image" ><img src="media/windows10.jpg" class="image-child" > </div>
                 <div class="overlay-down"> Honestly, we're sad to hear you didn't like it, but we're sure you like the other one. </div>
         </div> 
@@ -92,10 +91,39 @@
 <!-- <div class="img-hover-zoom">
     <img src="media/alexandria2.jpg" alt="This zooms-in really well and smooth">
   </div> -->
+<section class="section-4">
+    
+    <div class="flex-slide-container">
+        <div class="food-container">
+            <div class="food-title">Food</div>
+            <div class="food-paragraph"> While Egypt’s numerous tourist attractions are a good enough reason to travel to the country, Egyptian cuisine is another reason to visit. Though everyone knows about kebab and falafel, there’s much more to it and if you are traveling to Egypt it would be a real pity to miss out.These are some of the most famous dishes in Egypt! <span class="food-paragraph-span"> Check out our image gallery and see what you like.</span></div>
+        </div>
+        <div class="slide-container">
+            <!-- <span id="slider-image-1"></span>
+            <span id="slider-image-2"></span>
+            <span id="slider-image-3"></span>-->
+            <div class="image-container"> 
+                <img src="media/kofta2.jpg " alt="" class="slider-image1" id="slider-image-1">
+                <img src="media/macaroni2.jpg" class="slider-image2" alt=""  id="slider-image-2">
+                <img src="media/kosh.jpg" class="slider-image3" alt=""  id="slider-image-3">
+                <img src="media/real-konafa2.jpg" class="slider-image4" alt=""  id="slider-image-4">
+                
+            </div>
+            <div class="button-container">
+                <a href="#slider-image-1" class="slider-button"></a>
+                <a href="#slider-image-2" class="slider-button"></a>
+                <a href="#slider-image-3" class="slider-button"></a>
+                <a href="#slider-image-4" class="slider-button"></a>
+               
+            </div>
+            
+        </div>
+        
+    </div>
+   
+</section>
 
-
-
-
+ 
 
 
 
@@ -140,15 +168,58 @@
 
    <section id="reviews"class="parent">
    </section> -->
+<!-- 
+<div class="navbar">
+    <nav class="nav-button">
+        <ul><a href="#home">Home</a></ul> 
+        <ul><a href="#cities">Cities</a></ul>
+        <ul><a href="#beaches">Favorites</a></ul>
+        <ul><a href="#history">Food</a></ul>
+        <ul><a href="#reviews">Reviews</a></ul>
+    </nav>
+</div>  -->
+<!-- 
+<div class="navigation">
+    <input type="checkbox" class="navigation_checkbox" id="navi-toggle"> 
+    <label for="navi-toggle" class="navigation_button"> 
+        <div class="menu">
+            <div class="bar"></div>
+              <div class="bar"></div>
+             <div class="bar"></div>
+        </div>
+        <span class="navigation_icon"></span>
+    </label>
+    <div class="navigation_background">&nbsp;</div>
+        <nav class="navigation_nav">
+            <ul class="navigation_list">
+                <li class="navigation_item"><a href="#home" class="navigation_link">Home</a></li>
+                <li class="navigation_item"><a href="#gallery" class="navigation_link">Gallery</a></li>
+                <li class="navigation_item"><a href="#shades" class="navigation_link">Shades of the City</a></li>
+                <li class="navigation_item"><a href="#stories" class="navigation_link">Stories</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>	 -->
 
-<!-- <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#cities">Cities</a>
-    <a href="#beaches">beaches</a>
-    <a href="#history">History</a>
-    <a href="#reviews">Reviews</a>
-</nav> -->
 
+<nav >
+    <div id="menuToggle">
+      <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+<!--      
+        <div class="back">&nbsp;</div>   -->
+
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ul>
+
+    </div>
+  </nav>
 
 </body>
 </html>
