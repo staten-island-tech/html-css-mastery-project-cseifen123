@@ -276,7 +276,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 0px 0px 20px 20px;
   background-color: #f0c49e;
 }
 
@@ -985,7 +984,6 @@
 .slider-image4, .slider-image3, .slider-image2 {
   position: absolute;
   max-width: 100%;
-  opacity: 0;
   border-radius: 20px;
   z-index: 1;
   border: 10px solid black;
@@ -1018,23 +1016,20 @@
 }
 
 #slider-image-1:target {
-  opacity: 1;
   z-index: 2;
 }
 
 #slider-image-2:target {
-  opacity: 1;
   z-index: 2;
 }
 
 #slider-image-3:target {
-  opacity: 1;
   z-index: 2;
 }
 
 #slider-image-4:target {
-  opacity: 1;
   z-index: 2;
+  background-color: blue;
 }
 
 html {
