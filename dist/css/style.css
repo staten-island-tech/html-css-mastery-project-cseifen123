@@ -502,7 +502,7 @@
   top: 50px;
   left: 50px;
   /*1300px*/
-  z-index: 1;
+  z-index: 1000;
   -webkit-user-select: none;
   -moz-user-select: none;
    -ms-user-select: none;
@@ -985,6 +985,7 @@
   position: absolute;
   max-width: 100%;
   border-radius: 20px;
+  opacity: 0;
   z-index: 1;
   border: 10px solid black;
 }
@@ -999,7 +1000,7 @@
   width: 25px;
   border-radius: 20px;
   background-color: black;
-  margin: 25px;
+  margin: 15px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -1008,6 +1009,7 @@
   .slider-button {
     height: 35px;
     width: 35px;
+    margin: 25px;
   }
 }
 
@@ -1020,16 +1022,18 @@
 }
 
 #slider-image-2:target {
+  opacity: 1;
   z-index: 2;
 }
 
 #slider-image-3:target {
+  opacity: 1;
   z-index: 2;
 }
 
 #slider-image-4:target {
+  opacity: 1;
   z-index: 2;
-  background-color: blue;
 }
 
 html {
