@@ -4,16 +4,66 @@
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    background-color: blue;
+  //  background-color: blue;
 }
 
-.container-5{
+.close-cont-1{
     display:flex;
     align-items: center;
     justify-content:center;
    // height:30vh;
-    width:30vw;
+  //height:30vh;
+  
     background-color: red;
 }
 
-  
+.box-1{
+    display:block;
+    background-color: blueviolet;
+}
+.box-2{
+    display:block;
+    background-color: burlywood;
+}
+.box-3{
+    display:block;
+    background-color: forestgreen;
+}
+.box-4{
+    display:block;
+    background-color: cyan;
+}
+
+.close-cont-2{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:30vw;
+}
+.box-5{
+    display:block;
+    background-color: red;
+}
+.box-6{
+    display:block;
+    background-color: yellow;
+}
+.box-7{
+    display:block;
+    background-color: lightcoral;
+    flex:1;
+}
+.box-8{
+    display:block;
+    background-color: cornflowerblue;
+}
+
+#music:target{
+
+}
+
+.option{
+    border-radius:20px;
+    height:5rem;
+    background-color: red;
+}
