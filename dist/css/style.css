@@ -946,6 +946,7 @@
   padding-top: 4rem;
   border-radius: 20px;
   position: relative;
+  margin: 3rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -973,7 +974,6 @@
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  margin: 3rem;
 }
 
 .slider-image1 {
@@ -1036,6 +1036,10 @@
 #slider-image-4:target {
   opacity: 1;
   z-index: 2;
+}
+
+.margin {
+  margin: 3rem;
 }
 
 .section-5 {
