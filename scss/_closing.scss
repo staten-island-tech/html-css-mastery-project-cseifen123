@@ -1,5 +1,5 @@
 .section-5{
-    height: 100vh;
+  //  height: 100vh;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -7,59 +7,110 @@
   //  background-color: blue;
 }
 
-.close-cont-1{
+// .close-cont-1{
+//     display:flex;
+//     align-items: center;
+//     justify-content:center;
+//     width:50%;
+//   //  width:30vw;
+//    // height:30vh;
+//   //height:30vh;
+//     //background-color: red;
+// }
+.part-1{
     display:flex;
     align-items: center;
-    justify-content:center;
-   // height:30vh;
-  //height:30vh;
-  
-    background-color: red;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+   // height:100vh;
+   width:50%; 
 }
 
 .box-1{
-    display:block;
-    background-color: blueviolet;
-}
-.box-2{
-    display:block;
-    background-color: burlywood;
-}
-.box-3{
-    display:block;
-    background-color: forestgreen;
-}
-.box-4{
-    display:block;
-    background-color: cyan;
-}
-
-.close-cont-2{
     display:flex;
     align-items: center;
-    justify-content:center;
-    width:30vw;
+    justify-content: center;
+    background-color: blueviolet;
+    // flex-direction:row;
+    flex:1;
+    z-index:1;
+  //  flex-grow:1;
+    padding:2rem;
 }
 .box-5{
-    display:block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: red;
+    flex:2;
+    padding:2rem;
 }
+.box-2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    flex:3;
+    padding:2rem;
+
+}
+.box-3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: forestgreen;
+    flex:2;
+    padding:2rem;
+}
+.box-4{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cyan;
+    flex:2;
+    padding:2rem;
+}
+
+// .close-cont-2{
+//     display:flex;
+//     align-items: center;
+//     justify-content:center;
+//    width:50%;
+// }
+
 .box-6{
-    display:block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: yellow;
+    flex:2;
+    padding:2rem;
 }
 .box-7{
-    display:block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: lightcoral;
     flex:1;
+    padding:2rem;
 }
 .box-8{
-    display:block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: cornflowerblue;
+    flex:3;
+     padding:2rem;
 }
 
 .option{
     border-radius:20px;
     height:5rem;
     background-color: red;
+}
+
+.close-width{
+    max-width:100%;
+   // padding:2rem;
 }
