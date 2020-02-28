@@ -895,7 +895,6 @@
 .food-paragraph {
   max-width: 100%;
   margin: auto;
-  border: 2px solid black;
   color: black;
   line-height: 30px;
   font-size: 1.5rem;
@@ -1042,6 +1041,12 @@
   margin: 3rem;
 }
 
+.top {
+  -webkit-clip-path: polygon(25% 0, 39% 0, 0 52%, 0 34%);
+          clip-path: polygon(25% 0, 39% 0, 0 52%, 0 34%);
+  background-color: grey;
+}
+
 .section-5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1056,6 +1061,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(244, 234, 208, 0.356))), url(../media/pillar.jpg);
+  background-image: linear-gradient(to right bottom, rgba(244, 234, 208, 0.356)), url(../media/pillar.jpg);
+  position: relative;
+  height: 100vh;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: none;
+  background-size: cover;
 }
 
 .part-1 {
@@ -1222,6 +1238,11 @@
 
 .close-width {
   max-width: 100%;
+}
+
+.video {
+  padding: 2rem;
+  border-radius: 20px;
 }
 
 html {

@@ -34,7 +34,7 @@
  .food-paragraph{
     max-width:100%;
     margin: auto;
-    border:2px solid black;
+    //border:2px solid black;
     color:black;
     line-height: 30px;
     //font-family:$font-2;
@@ -150,3 +150,7 @@
     margin:3rem;
 }
 
+.top{
+    clip-path: polygon(25% 0, 39% 0, 0 52%, 0 34%);
+    background-color: grey;
+}
