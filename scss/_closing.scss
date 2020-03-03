@@ -2,7 +2,7 @@
     //  height: 100vh;
     background-image: url(../media/hegazy.jpg);
     position: relative; 
-    height: 100vh;
+    min-height: 100vh;
     background-position: top;
     margin:none;
     background-size: cover;
@@ -15,7 +15,7 @@
    //     align-items: center;
  //   justify-content: space-evenly;
      text-align: center;
-    height:100vh;
+    min-height:100vh;
     @include laptop{
        flex-direction:row; 
        height:100vh;
@@ -69,7 +69,7 @@
     justify-content: center;
     flex-direction:column;
     max-width:100%;
-    width:30%;
+  // width:30%;
     
 }
 
@@ -113,12 +113,21 @@
     //top: -10px;
 }
 
+
 .info:hover  .arrow-click-2{
     // opacity:1;
     // z-index:3;
     display:block;
    // overflow: auto;
 }
+.temp:target  .arrow-click-2{
+    // opacity:1;
+    // z-index:3;
+    display:block;
+   // overflow: auto;
+}
+
+
 
 
 .arrow-click-2{
@@ -129,135 +138,70 @@
     //visibility: hidden;
 }
 
-
-
-// #arrow-click-2:target{
-//     opacity:1;
-// }
-
-// .iframe-container{
-//     position: relative;
-//     width: 100%;
-//     padding-bottom: 56.25%; 
-//     height: 0;
-//   }
-//   .iframe-container iframe{
-//     position: absolute;
-//     top:0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//   }
-// .close-cont-1{
-//     display:flex;
-//     align-items: center;
-//     justify-content:center;
-//   //  width:30vw;
-//     width:50%;
-//    // height:30vh;
-//   //height:30vh;
-//   //background-color: red;
-// }
-
-.part-1{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:row;
-    flex-wrap: wrap;
-    // height:100vh;
-    width:50%; 
+.temp{
+    background-color: black;
+    height:20px;
+    width:20px;
 }
 
-.box-1{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: blueviolet;
-    // flex-direction:row;
-    flex:1;
-    z-index:1;
-  //  flex-grow:1;
-    padding:2rem;
-}
-.box-5{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    flex:2;
-    padding:2rem;
-}
-.box-2{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: burlywood;
-    flex:3;
-    padding:2rem;
-
-}
-.box-3{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: forestgreen;
-    flex:2;
-    padding:2rem;
-}
-.box-4{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cyan;
-    flex:2;
-    padding:2rem;
+#reference:target{
+    display:block;
 }
 
-// .close-cont-2{
-//     display:flex;
-//     align-items: center;
-//     justify-content:center;
-//    width:50%;
-// }
 
-.box-6{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: yellow;
-    flex:2;
-    padding:2rem;
-}
-.box-7{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: lightcoral;
-    flex:1;
-    padding:2rem;
-}
-.box-8{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    flex:3;
-     padding:2rem;
-}
 
-.option{
-    border-radius:20px;
-    height:5rem;
-    background-color: red;
-}
-
-.close-width{
-    max-width:100%;
-   // padding:2rem;
-}
-
-.video{
-    padding:2rem;
-    border-radius:20px;
-}
+.drop-item {
+    font-family: $font-2;
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    font-size: 2rem;
+    color: white;
+    
+    .drop-toggle {
+      display: block;
+      width: 100%; 
+      padding: 20px;
+      border: 0 solid #3F5B62;
+      border-width: 0 0 1px 1px;
+      outline: none !important;
+      background: hsl(200, 30%, 20%);
+      text-align: center;
+      transition: background 500ms;
+  
+      &:hover {
+        background: hsl(200, 30%, 25%);
+      }
+      // Toggle dropdown - use :hover or :focus
+      &:focus {
+        background: hsl(200, 30%, 14%);
+        & + .round {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    
+    &:first-child .drop-toggle {
+      border-left-width: 0;
+    }
+  
+    .round {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: -1px;
+      margin: -1px 0 0 0;
+      padding: 10px;
+      background: hsl(200, 8%, 22%);
+      border: 1px solid #3F5B62;
+      border-radius: 0 0 5px 5px;
+      list-style: none;
+      // Transition
+      visibility: hidden;
+      opacity: 0;
+      transition-property: opacity, visibility;
+      transition-duration: 500ms;
+    }
+  }
