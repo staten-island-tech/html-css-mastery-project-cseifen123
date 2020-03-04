@@ -124,7 +124,7 @@
     // opacity:1;
     // z-index:3;
     display:block;
-   // overflow: auto;
+  // overflow: auto;
 }
 
 
@@ -166,16 +166,18 @@
       border: 0 solid #3F5B62;
       border-width: 0 0 1px 1px;
       outline: none !important;
-      background: hsl(200, 30%, 20%);
+      background: grey;//color of button
       text-align: center;
       transition: background 500ms;
+      font-family: $font-2;
+      font-size:3rem;
   
       &:hover {
-        background: hsl(200, 30%, 25%);
+        background: rgb(97, 97, 97);
       }
       // Toggle dropdown - use :hover or :focus
       &:focus {
-        background: hsl(200, 30%, 14%);
+        background: rgb(97, 97, 97);//color of button when you click
         & + .round {
           opacity: 1;
           visibility: visible;
@@ -205,3 +207,11 @@
       transition-duration: 500ms;
     }
   }
+
+
+  .open{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
