@@ -1049,6 +1049,20 @@
 }
 
 .section-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
   background-image: url(../media/hegazy.jpg);
   position: relative;
   min-height: 100vh;
@@ -1061,19 +1075,30 @@
   .section-5 {
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100vh;
   }
 }
 
-.closing-container {
+@media (min-width: 600px) {
+  .section-5 {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.contain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1081,17 +1106,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  min-height: 100vh;
-}
-
-@media only screen and (min-width: 900px) {
-  .closing-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100vh;
-  }
+  width: 100%;
 }
 
 .close-cont {
@@ -1253,14 +1268,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 100%;
-  width: 45%;
+  width: 200px;
+}
+
+@media only screen and (min-width: 900px) {
+  .drop-item {
+    width: 500px;
+  }
 }
 
 .drop-item .drop-toggle {
   display: inline-block;
   width: 100%;
-  padding: 20px;
+  padding: 2rem;
   border: 0 solid #3F5B62;
   border-width: 0 0 1px 1px;
   outline: none !important;
@@ -1298,7 +1318,8 @@
 
 .drop-item .round {
   display: none;
-  position: relative;
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
   top: 100%;
   left: 0;
   right: -1px;
@@ -1327,17 +1348,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2 rem;
+  padding: 2rem;
+  border-radius: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media only screen and (min-width: 900px) {
-  .open {
-    width: 100%;
-  }
 }
 
 html {
@@ -1386,7 +1402,6 @@ body {
   .header {
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
   }
 }

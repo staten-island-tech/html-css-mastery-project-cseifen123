@@ -1,41 +1,54 @@
 .section-5{
     //  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
     background-image: url(../media/hegazy.jpg);
     position: relative; 
     min-height: 100vh;
     background-position: top;
     margin:none;
     background-size: cover;
+   
     @include desktop{
         background-attachment: fixed;
         background-position: center;
-        background-repeat: no-repeat;
+       // background-repeat: no-repeat;
         background-size: cover;
+        flex-direction:row; 
+       height:100vh;
+    }
+    @include tablet{
+        background-size: cover; 
+        background-attachment: fixed; 
     }
 
    // clip-path: polygon(25% 0, 39% 0, 0 52%, 0 34%);
     //  background-color: blue;
 }
-.closing-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height:100vh;
-    @include laptop{
-       flex-direction:column; 
-       height:100vh;
-    }
-}
-
-// .contain{
-//     display:flex;
-//     flex-direction: column;
+// .closing-container{
+//     display: flex;
+//     flex-direction: row;
 //     align-items: center;
 //     justify-content: center;
 //     text-align: center;
+//     min-height:100vh;
+//     @include laptop{
+//        flex-direction:column; 
+//        height:100vh;
+//     }
 // }
+
+.contain{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
 .close-cont{
     display:flex;
     flex-direction:column;
@@ -172,11 +185,16 @@
     align-items: center;
     justify-content: center;
     flex-direction:column;
-    max-width:100%;
+    //max-width:100%;
+   width:200px;
+    @include laptop{
+        width:500px;
+    }
+    
 //     font-family: $font-2;
 //     position: relative;
 //     display: block;
-      width: 45%;
+     // width: 45%;
 //    // max-width:100%;
 //     vertical-align: top;
 //     font-size: 1.5rem;
@@ -189,10 +207,12 @@
     
     .drop-toggle {
         display:inline-block;
+      //  border-radius: 20px;
+    
      // display: block;
      //position: relative;
       width: 100%; 
-      padding: 20px;
+      padding: 2rem;
       border: 0 solid #3F5B62;
       border-width: 0 0 1px 1px;
       outline: none !important;
@@ -227,8 +247,10 @@
   
     .round {
       display: none;
+      font-family: $font-2;
+      font-size:2rem;
       //position: absolute;
-      position: relative;
+      //position: relative;
       top: 100%;
       left: 0;
       right: -1px;
@@ -264,16 +286,13 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  padding : 2 rem;  
-
-  
-  
- 
-
+  padding: 2rem;  
+  border-radius: 20px;
+    
     flex-direction: column;
    // width:100%;
    // margin:auto;
     @include laptop{
-        width:100%;
+      //  width:100%;
     }
 }
