@@ -1280,11 +1280,11 @@
 .drop-item .drop-toggle {
   display: inline-block;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   border: 0 solid #3F5B62;
   border-width: 0 0 1px 1px;
   outline: none !important;
-  background: grey;
+  background: rgba(128, 128, 128, 0.795);
   text-align: center;
   -webkit-transition: background 500ms;
   transition: background 500ms;
@@ -1299,11 +1299,11 @@
 }
 
 .drop-item .drop-toggle:hover {
-  background: #616161;
+  background: #525252;
 }
 
 .drop-item .drop-toggle:focus {
-  background: #616161;
+  background: #525252;
 }
 
 .drop-item .drop-toggle:focus + .round {
@@ -1319,13 +1319,14 @@
 .drop-item .round {
   display: none;
   font-family: "Anton", sans-serif;
+  color: white;
   font-size: 2rem;
   top: 100%;
   left: 0;
   right: -1px;
   margin: -1px 0 0 0;
   padding: 10px;
-  background: #343a3d;
+  background: #414141;
   border: 1px solid #3F5B62;
   border-radius: 0 0 5px 5px;
   list-style: none;

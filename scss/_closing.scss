@@ -212,11 +212,12 @@
      // display: block;
      //position: relative;
       width: 100%; 
-      padding: 2rem;
+      padding: 1.5rem;
       border: 0 solid #3F5B62;
       border-width: 0 0 1px 1px;
       outline: none !important;
-      background: grey;  //color of button
+      background: rgba(128, 128, 128, 0.795);
+     // background: rgba(255, 199, 78, 0.795); //color of button
       text-align: center;
       transition: background 500ms;
       font-family: $font-2;
@@ -226,12 +227,13 @@
       }
   
       &:hover {
-        background: rgb(97, 97, 97);
+       // background: rgb(97, 97, 97);
+        background: rgb(82, 82, 82);
       }
       
       // Toggle dropdown - use :hover or :focus
       &:focus {
-        background: rgb(97, 97, 97);//color of button when you click
+        background:rgb(82, 82, 82) ;//color of button when you click
         & + .round {
           opacity: 1;
          visibility: visible;
@@ -248,6 +250,7 @@
     .round {
       display: none;
       font-family: $font-2;
+      color:white;
       font-size:2rem;
       //position: absolute;
       //position: relative;
@@ -256,7 +259,8 @@
       right: -1px;
       margin: -1px 0 0 0;
       padding: 10px;
-      background: hsl(200, 8%, 22%);
+     // background: hsl(200, 8%, 22%);
+     background:rgb(65, 65, 65);
       border: 1px solid #3F5B62;
       border-radius: 0 0 5px 5px;
       list-style: none;
@@ -281,8 +285,6 @@
     // @include laptop{
     //     flex-direction:row;
     // }
-
-    
   display:flex;
   align-items:center;
   justify-content:center;
