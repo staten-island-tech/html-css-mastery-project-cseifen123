@@ -1057,18 +1057,39 @@
   background-size: cover;
 }
 
+@media (min-width: 1100px) {
+  .section-5 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .closing-container {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   min-height: 100vh;
 }
 
 @media only screen and (min-width: 900px) {
   .closing-container {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100vh;
   }
 }
@@ -1220,17 +1241,24 @@
 }
 
 .drop-item {
-  font-family: "Anton", sans-serif;
   position: relative;
-  display: inline-block;
-  width: 25%;
-  vertical-align: top;
-  font-size: 2rem;
-  color: white;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  width: 45%;
 }
 
 .drop-item .drop-toggle {
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 20px;
   border: 0 solid #3F5B62;
@@ -1241,7 +1269,13 @@
   -webkit-transition: background 500ms;
   transition: background 500ms;
   font-family: "Anton", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .drop-item .drop-toggle {
+    font-size: 3rem;
+  }
 }
 
 .drop-item .drop-toggle:hover {
@@ -1255,6 +1289,7 @@
 .drop-item .drop-toggle:focus + .round {
   opacity: 1;
   visibility: visible;
+  display: block;
 }
 
 .drop-item:first-child .drop-toggle {
@@ -1262,7 +1297,8 @@
 }
 
 .drop-item .round {
-  position: absolute;
+  display: none;
+  position: relative;
   top: 100%;
   left: 0;
   right: -1px;
@@ -1278,6 +1314,7 @@
   transition-property: opacity, visibility;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
+  text-align: center;
 }
 
 .open {
@@ -1290,10 +1327,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2 rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (min-width: 900px) {
+  .open {
+    width: 100%;
+  }
 }
 
 html {

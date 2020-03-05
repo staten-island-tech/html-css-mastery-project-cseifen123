@@ -6,21 +6,36 @@
     background-position: top;
     margin:none;
     background-size: cover;
+    @include desktop{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
    // clip-path: polygon(25% 0, 39% 0, 0 52%, 0 34%);
     //  background-color: blue;
 }
 .closing-container{
-    display: block;
-    //flex-direction: column;
-   //     align-items: center;
- //   justify-content: space-evenly;
-     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     min-height:100vh;
     @include laptop{
-       flex-direction:row; 
+       flex-direction:column; 
        height:100vh;
     }
 }
+
+// .contain{
+//     display:flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+// }
 .close-cont{
     display:flex;
     flex-direction:column;
@@ -151,46 +166,69 @@
 
 
 .drop-item {
-    font-family: $font-2;
-    position: relative;
-    display: inline-block;
-    width: 25%;
-    vertical-align: top;
-    font-size: 2rem;
-    color: white;
+
+      position:relative;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    max-width:100%;
+//     font-family: $font-2;
+//     position: relative;
+//     display: block;
+      width: 45%;
+//    // max-width:100%;
+//     vertical-align: top;
+//     font-size: 1.5rem;
+//     color: white;
+//     margin:2rem;
+//     @include laptop{
+//         width:25%;
+//         font-size: 2rem;
+//     }
     
     .drop-toggle {
-      display: block;
+        display:inline-block;
+     // display: block;
+     //position: relative;
       width: 100%; 
       padding: 20px;
       border: 0 solid #3F5B62;
       border-width: 0 0 1px 1px;
       outline: none !important;
-      background: grey;//color of button
+      background: grey;  //color of button
       text-align: center;
       transition: background 500ms;
       font-family: $font-2;
-      font-size:3rem;
+      font-size:2rem;
+      @include laptop{
+          font-size:3rem;
+      }
   
       &:hover {
         background: rgb(97, 97, 97);
       }
+      
       // Toggle dropdown - use :hover or :focus
       &:focus {
         background: rgb(97, 97, 97);//color of button when you click
         & + .round {
           opacity: 1;
-          visibility: visible;
+         visibility: visible;
+         display:block;
         }
       }
     }
     
     &:first-child .drop-toggle {
       border-left-width: 0;
+     // max-width:100%;
     }
   
     .round {
-      position: absolute;
+      display: none;
+      //position: absolute;
+      position: relative;
       top: 100%;
       left: 0;
       right: -1px;
@@ -205,13 +243,37 @@
       opacity: 0;
       transition-property: opacity, visibility;
       transition-duration: 500ms;
+      text-align:center;
     }
   }
 
 
   .open{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
+  //  display:flex;
+    // position:relative;
+    // display:block;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction:column;
+    // max-width:100%;
+    // @include laptop{
+    //     flex-direction:row;
+    // }
+
+    
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding : 2 rem;  
+
+  
+  
+ 
+
+    flex-direction: column;
+   // width:100%;
+   // margin:auto;
+    @include laptop{
+        width:100%;
+    }
 }
