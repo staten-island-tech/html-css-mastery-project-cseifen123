@@ -208,11 +208,10 @@
     .drop-toggle {
         display:inline-block;
       //  border-radius: 20px;
-    
      // display: block;
      //position: relative;
       width: 100%; 
-      padding: 1.5rem;
+      padding:2.5rem;
       border: 0 solid #3F5B62;
       border-width: 0 0 1px 1px;
       outline: none !important;
@@ -235,7 +234,7 @@
       &:focus {
         background:rgb(82, 82, 82) ;//color of button when you click
         & + .round {
-          opacity: 1;
+         opacity: 1;
          visibility: visible;
          display:block;
         }
@@ -297,4 +296,17 @@
     @include laptop{
       //  width:100%;
     }
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
 }

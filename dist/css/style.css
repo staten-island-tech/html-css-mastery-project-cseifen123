@@ -1280,7 +1280,7 @@
 .drop-item .drop-toggle {
   display: inline-block;
   width: 100%;
-  padding: 1.5rem;
+  padding: 2.5rem;
   border: 0 solid #3F5B62;
   border-width: 0 0 1px 1px;
   outline: none !important;
@@ -1355,6 +1355,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
 }
 
 html {
