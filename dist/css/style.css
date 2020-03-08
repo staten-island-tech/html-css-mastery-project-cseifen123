@@ -1308,6 +1308,7 @@
 
 .drop-item .drop-toggle:focus + .round {
   opacity: 1;
+  font-size: 2rem;
   visibility: visible;
   display: block;
 }
@@ -1330,7 +1331,49 @@
   border: 1px solid #3F5B62;
   border-radius: 0 0 5px 5px;
   list-style: none;
-  visibility: hidden;
+  opacity: 0;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  text-align: center;
+}
+
+.drop-item .round-2 {
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-size: 2rem;
+  top: 100%;
+  left: 0;
+  right: -1px;
+  margin: -1px 0 0 0;
+  padding: 10px;
+  background: #414141;
+  border: 1px solid #3F5B62;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
+  visibility: visible;
+  opacity: 0;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  text-align: center;
+}
+
+.round-2 {
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-size: 2rem;
+  top: 100%;
+  left: 0;
+  right: -1px;
+  margin: -1px 0 0 0;
+  padding: 10px;
+  background: #414141;
+  border: 1px solid #3F5B62;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
   opacity: 0;
   -webkit-transition-property: opacity, visibility;
   transition-property: opacity, visibility;
