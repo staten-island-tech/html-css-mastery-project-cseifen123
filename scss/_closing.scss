@@ -241,7 +241,7 @@
              font-size: 2rem;
              visibility: visible;
              display:block;
-           //  z-index: 1;
+          
             }
         }
         @include tablet-2{
@@ -257,7 +257,7 @@
                  font-size: 2rem;
                  visibility: visible;
                  display:block;
-               //  z-index: 1;
+             
                 }
               }
             
@@ -298,7 +298,7 @@
       transition-duration: 500ms;
       text-align:center;
 }
-    .round a {display:block; z-index: 9;}
+   .round a {display:block; }
 
     
 //   .round-2{
@@ -364,7 +364,7 @@
   //display:block;
   align-items:center;
   justify-content:center;
-  padding: 2rem;  
+  padding: 3rem;  
   border-radius: 20px;
     
     flex-direction: column;

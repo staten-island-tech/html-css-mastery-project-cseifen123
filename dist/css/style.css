@@ -1287,7 +1287,6 @@
 
 .round a {
   display: block;
-  z-index: 9;
 }
 
 .open {
@@ -1297,7 +1296,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
