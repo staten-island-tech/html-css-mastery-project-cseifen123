@@ -227,7 +227,7 @@
       border-width: 0 0 1px 1px;
       outline: none !important;
      // background: rgba(128, 128, 128, 0.795);
-      background: rgba(128, 128, 128, 0.322);
+      background: rgba(128, 128, 128, 0.555);
    
      //background: rgba(255, 199, 78, 0.795); //color of button
      //background-color:none;
@@ -246,16 +246,16 @@
         &:hover {
         // background: rgb(97, 97, 97);
             background: rgb(82, 82, 82);
+            background: rgba(82, 82, 82, 0.658);
         }
         &:focus {
-            background:rgb(82, 82, 82) ;  //color of button when you click
+           // background:rgb(82, 82, 82) ; //color of button when you click
+           background: rgba(82, 82, 82, 0.658);
             & + .round {
              opacity: 1;
              font-size: 2rem;
              visibility: visible;
              display:block;
-          
-          
             }
         }
         @include tablet-2{
@@ -296,7 +296,7 @@
    // position: absolute;
       font-family: $font-2;
       color:white;
-      font-size:2rem;
+      font-size:2.5rem;
       //position: absolute;
       //position: relative;
       top: 100%;
@@ -305,7 +305,7 @@
       margin: -1px 0 0 0;
       padding: 10px;
      // background: hsl(200, 8%, 22%);
-     background:rgb(65, 65, 65);
+     background:rgb(129, 127, 127);
       border: 1px solid #3F5B62;
       border-radius: 0 0 5px 5px;
       list-style: none;
@@ -317,6 +317,9 @@
       transition-property: opacity, visibility;
       transition-duration: 500ms;
       text-align:center;
+      @include laptop{
+        font-size:3rem;
+      }
 }
    .round a {
      display:block; 
@@ -365,5 +368,17 @@ input[type=text]:focus {
 .style-link{
   color:white;
   text-decoration: none;
+  transition:0.3s;
+}
+
+.style-link:hover{
+  color:black;
+ background-color:$primary;
+ // background: linear-gradient(to right, red 50%, blue 50%);
+//background-size: 200% 100%;
+//background-position:left bottom;
+//background: linear-gradient(to right, red 34%, blue 65%);
+//background-size: 300% 100%;
+
 }
 
