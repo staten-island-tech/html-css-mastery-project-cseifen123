@@ -516,45 +516,22 @@
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   float: left;
-  padding: 1rem;
-  border-radius: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: F4EAD0;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0 10px;
 }
 
 #menuToggle a:hover {
-  color: black;
-  background-color: beige;
+  color: white;
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
   -webkit-animation: bounce 1s;
           animation: bounce 1s;
-}
-
-@-webkit-keyframes bounce {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes bounce {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
 }
 
 #menuToggle input {
@@ -615,11 +592,11 @@
 
 #menu {
   position: absolute;
-  width: 7rem;
+  width: 10rem;
   height: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 125px;
+  padding-top: 27rem;
   color: white;
   background-color: #333;
   opacity: 0.7;
@@ -675,6 +652,41 @@
   color: #fff;
   cursor: pointer;
   z-index: 0;
+}
+
+.link-3 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.link-3:hover {
+  background-color: #ffffff;
+  color: #EEA200;
+  padding: 24px 10px;
+}
+
+.link-1 {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #3fa46a;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #3fa46a;
+  border-bottom: 4px solid #3fa46a;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+
+.link-1:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0;
 }
 
 .food-container {
@@ -892,7 +904,6 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-align: center;
-  background-image: url(../media/hegazy.jpg);
   position: relative;
   min-height: 100vh;
   background-position: top;
@@ -1051,31 +1062,31 @@
   -webkit-transition-duration: 0.2s;
   display: block;
   width: 100%;
-  padding: 2.5rem;
+  padding: 2rem;
   border: 0 solid #3F5B62;
   border-width: 0 0 1px 1px;
   outline: none !important;
-  background: rgba(128, 128, 128, 0.555);
+  background-image: url(../media/hegazy.jpg);
   text-align: center;
   -webkit-transition: background 500ms;
   transition: background 500ms;
   font-family: "Anton", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 900px) {
   .drop-toggle {
     font-size: 3rem;
+    padding: 2.5rem;
   }
 }
 
 .drop-toggle:hover {
-  background: #525252;
-  background: rgba(82, 82, 82, 0.658);
+  opacity: 0.7;
 }
 
 .drop-toggle:focus {
-  background: rgba(82, 82, 82, 0.658);
+  opacity: 0.7;
 }
 
 .drop-toggle:focus + .round {
@@ -1094,9 +1105,15 @@
   }
   .drop-toggle:hover + .round {
     opacity: 1;
-    font-size: 2rem;
+    font-size: 1.5rem;
     visibility: visible;
     display: block;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 900px) {
+  .drop-toggle:hover + .round {
+    font-size: 3rem;
   }
 }
 
@@ -1109,7 +1126,6 @@
   display: collapse;
   font-family: "Anton", sans-serif;
   color: white;
-  font-size: 2.5rem;
   top: 100%;
   left: 0;
   right: -1px;

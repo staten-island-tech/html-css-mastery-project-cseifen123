@@ -62,7 +62,7 @@
   -webkit-user-select: none;
   user-select: none;
   height:100%;
- // width:100%;
+  //width:20rem;
 }
 
 #menuToggle a{
@@ -71,33 +71,45 @@
   color: white;
   transition: color 0.3s ease;
   float: left;
-  padding:1rem;
-  border-radius: 10px;
+  //padding:1rem;
+ // border-radius: 10px;
+  transition: 0.3s ease;
+  background: $primary;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+ // border-top: 4px solid beige;
+ // border-bottom: 4px solid beige;
+ padding: 10px 0;
+  margin: 0 10px;
 }
-
+// https://codepen.io/Calloumi/pen/vndlH
 
 #menuToggle a:hover{
-  color: black;
-  background-color:beige;
+  color: white;
+ // background-color:beige;
+ border-top: 4px solid #ffffff;
+ border-bottom: 4px solid #ffffff;
+ // padding: 6px 0; 
   animation: bounce 1s;
 
 }
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
+// @keyframes bounce {
+// 	0%, 20%, 60%, 100% {
+// 		-webkit-transform: translateY(0);
+// 		transform: translateY(0);
+// 	}
 
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
+// 	40% {
+// 		-webkit-transform: translateY(-20px);
+// 		transform: translateY(-20px);
+// 	}
 
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-}
+// 	80% {
+// 		-webkit-transform: translateY(-10px);
+// 		transform: translateY(-10px);
+// 	}
+// }
 
 
 #menuToggle input{
@@ -166,11 +178,11 @@
 
 #menu{
   position: absolute;
-  width: 7rem;
+  width: 10rem;
   height:100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 125px;
+  padding-top: 27rem;
   color:white;
   background-color: #333;
    opacity:0.7;
@@ -180,7 +192,8 @@
   transform: translate(-100%, 0);
 //  opacity:0;
   visibility: hidden;
-    transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  //width:20rem;
 //   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 // transition: .5s ease-in-out;
 
@@ -192,6 +205,8 @@
   font-size: 2.5rem;
   font-family:$font-2;
   letter-spacing:1px;
+
+  
 }
 
 
@@ -233,6 +248,38 @@
   z-index: 0;
 }
 
+.link-3 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.link-3:hover {
+  background-color: #ffffff;
+  color: #EEA200;
+  padding: 24px 10px;
+}
+
+
+.link-1 {
+  transition: 0.3s ease;
+  background: #3fa46a;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #3fa46a;
+  border-bottom: 4px solid #3fa46a;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+.link-1:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0; 
+}
 // .menu::before, .menu::after {
 //   position: absolute;
 //   transition: 0.4s ease;
