@@ -5,7 +5,9 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    //background-image: url(../media/hegazy.jpg);
+
+    background-image: url(../media/hegazy.jpg);
+ 
     position: relative; 
     min-height: 100vh;
     background-position: top;
@@ -193,8 +195,8 @@
     //max-width:100%;
    width:200px;
     @include laptop{
-        width:500px;
-        padding:1rem;
+        width:50rem;
+        padding:3rem;
     }
     
 //     font-family: $font-2;
@@ -229,15 +231,16 @@
       outline: none !important;
      // background: rgba(128, 128, 128, 0.795);
     //  background: rgba(128, 128, 128, 0.555);
-    background-image: url(../media/hegazy.jpg);
+    //background-image: url(../media/hegazy.jpg);
+    background-image: linear-gradient(beige, orange, beige);
      //background: rgba(255, 199, 78, 0.795); //color of button
      //background-color:none;
       text-align: center;
-      transition: background 500ms;
+      transition: .5s;
       font-family: $font-2;
-      font-size:1.5rem;
+      font-size:2.5rem;
       @include laptop{
-          font-size:3rem;
+          font-size:4rem;
           padding:2.5rem;
       }
      
@@ -257,7 +260,7 @@
           opacity:0.7;
             & + .round {
              opacity: 1;
-             font-size: 2rem;
+            // font-size: 2rem;
              visibility: visible;
              display:block;
             }
@@ -265,14 +268,16 @@
         @include tablet-2{
             &:hover {
                 // background: rgb(97, 97, 97);
-                 background: rgb(82, 82, 82);
+                 //background: rgb(82, 82, 82);
+                 opacity:0.7;
                }
               // Toggle dropdown - use :hover or :focus
               &:hover {
-                background:rgb(82, 82, 82) ;//color of button when you click
+               // background:rgb(82, 82, 82) ;//color of button when you click
+                opacity:0.7;
                 & + .round {
                  opacity: 1;
-                 font-size: 1.5rem;
+                 //font-size: 1.5rem;
                  visibility: visible;
                  display:block;
                  @include laptop{
@@ -324,6 +329,7 @@
       transition-property: opacity, visibility;
       transition-duration: 500ms;
       text-align:center;
+      font-size:2rem;
       @include laptop{
         font-size:3rem;
       }
@@ -345,7 +351,7 @@
     // @include laptop{
     //     flex-direction:row;
     // }
-  //display:block;
+  display:block;
   align-items:center;
   justify-content:center;
   padding: 3rem;  
@@ -355,6 +361,7 @@
    // width:100%;
    // margin:auto;
     @include laptop{
+      flex-direction:row;
       //  width:100%;
     }
 }
