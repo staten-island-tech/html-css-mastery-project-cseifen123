@@ -66,69 +66,42 @@
 }
 
 #menuToggle a{
-
+text-align:center;
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
   float: left;
-  //padding:1rem;
- // border-radius: 10px;
+  padding:1rem;
+ //border-radius: 10px;
   transition: 0.3s ease;
   background: $primary;
   color: #ffffff;
   font-size: 20px;
   text-decoration: none;
- // border-top: 4px solid beige;
- // border-bottom: 4px solid beige;
- padding: 10px 0;
-  margin: 0 10px;
+  width:10rem;
+ margin:.6rem;
 
-  transition: 0.4s;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-  padding:2rem;
-  margin:1rem;
+  
+  background: linear-gradient(to right,  beige 50%, #333 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
 }
 // https://codepen.io/Calloumi/pen/vndlH
 
 #menuToggle a:hover{
   color: white;
- // background-color:beige;
- //border-top: 4px solid #ffffff;
- //border-bottom: 4px solid #ffffff;
- // padding: 6px 0; 
+  background-color:beige;
+  //padding: 6px 0; 
   animation: bounce 1s;
 
   background-color: #ffffff;
   color: black;
-  padding: 24px 10px;
+
+  background-position: left bottom;
+  //padding: 24px 10px;
 
 }
-
-ul{
-  padding:24px;
-  margin:20px;
-}
-// @keyframes bounce {
-// 	0%, 20%, 60%, 100% {
-// 		-webkit-transform: translateY(0);
-// 		transform: translateY(0);
-// 	}
-
-// 	40% {
-// 		-webkit-transform: translateY(-20px);
-// 		transform: translateY(-20px);
-// 	}
-
-// 	80% {
-// 		-webkit-transform: translateY(-10px);
-// 		transform: translateY(-10px);
-// 	}
-// }
-
 
 #menuToggle input{
   display: block;
@@ -140,21 +113,14 @@ ul{
   opacity: 0; 
   z-index: 2000; 
   cursor:pointer;
-  // background-color:white;
-  //   height: 7rem;
-  //   width: 7rem;
-  //   border-radius: 50%;
-  //background-color:white;
-//  border-radius:50%;
-//   -webkit-touch-callout: none;
 }
 
 
 #menuToggle span{
   display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
+  width: 50px;
+  height: 5px;
+  margin-bottom: 9px;
   position: relative;
   background: black;
   border-radius: 3px;
@@ -180,7 +146,9 @@ ul{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
+  
 }
+
 
 
 #menuToggle input:checked ~ span:nth-last-child(3){
@@ -195,12 +163,16 @@ ul{
 
 
 #menu{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
   position: absolute;
   width: 10rem;
   height:100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 27rem;
+  //padding-top: 27rem;
   color:white;
   background-color: #333;
    opacity:0.7;
@@ -208,7 +180,7 @@ ul{
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-//  opacity:0;
+// opacity:0;
   visibility: hidden;
   transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   //width:20rem;
@@ -224,8 +196,18 @@ ul{
   font-family:$font-2;
   letter-spacing:1px;
 
+  text-align: center;
+//  font-size: 16px;
+  // line-height: 30px; 
+  // color: white;
+  // transition: all .6s ease-out;
+  // display: block;
   
 }
+
+// #menu li:hover{
+//   color:black;
+// }
 
 
 #menuToggle input:checked ~ ul{
@@ -266,38 +248,8 @@ ul{
   z-index: 0;
 }
 
-.link-3 {
-  transition: 0.4s;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-}
-
-.link-3:hover {
-  background-color: #ffffff;
-  color: #EEA200;
-  padding: 24px 10px;
-}
 
 
-.link-1 {
-  transition: 0.3s ease;
-  background: #3fa46a;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  border-top: 4px solid #3fa46a;
-  border-bottom: 4px solid #3fa46a;
-  padding: 20px 0;
-  margin: 0 20px;
-}
-.link-1:hover {
-  border-top: 4px solid #ffffff;
-  border-bottom: 4px solid #ffffff;
-  padding: 6px 0; 
-}
 // .menu::before, .menu::after {
 //   position: absolute;
 //   transition: 0.4s ease;

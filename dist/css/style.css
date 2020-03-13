@@ -511,42 +511,37 @@
 }
 
 #menuToggle a {
+  text-align: center;
   text-decoration: none;
   color: white;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   float: left;
+  padding: 1rem;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   background: F4EAD0;
   color: #ffffff;
   font-size: 20px;
   text-decoration: none;
-  padding: 10px 0;
-  margin: 0 10px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-  padding: 2rem;
-  margin: 1rem;
+  width: 10rem;
+  margin: .6rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, beige), color-stop(50%, #333));
+  background: linear-gradient(to right, beige 50%, #333 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 #menuToggle a:hover {
   color: white;
+  background-color: beige;
   -webkit-animation: bounce 1s;
           animation: bounce 1s;
   background-color: #ffffff;
   color: black;
-  padding: 24px 10px;
-}
-
-ul {
-  padding: 24px;
-  margin: 20px;
+  background-position: left bottom;
 }
 
 #menuToggle input {
@@ -563,9 +558,9 @@ ul {
 
 #menuToggle span {
   display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
+  width: 50px;
+  height: 5px;
+  margin-bottom: 9px;
   position: relative;
   background: black;
   border-radius: 3px;
@@ -606,12 +601,24 @@ ul {
 }
 
 #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   width: 10rem;
   height: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 27rem;
   color: white;
   background-color: #333;
   opacity: 0.7;
@@ -631,6 +638,7 @@ ul {
   font-size: 2.5rem;
   font-family: "Anton", sans-serif;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 #menuToggle input:checked ~ ul {
@@ -667,41 +675,6 @@ ul {
   color: #fff;
   cursor: pointer;
   z-index: 0;
-}
-
-.link-3 {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-}
-
-.link-3:hover {
-  background-color: #ffffff;
-  color: #EEA200;
-  padding: 24px 10px;
-}
-
-.link-1 {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  background: #3fa46a;
-  color: #ffffff;
-  font-size: 20px;
-  text-decoration: none;
-  border-top: 4px solid #3fa46a;
-  border-bottom: 4px solid #3fa46a;
-  padding: 20px 0;
-  margin: 0 20px;
-}
-
-.link-1:hover {
-  border-top: 4px solid #ffffff;
-  border-bottom: 4px solid #ffffff;
-  padding: 6px 0;
 }
 
 .food-container {
@@ -1171,7 +1144,9 @@ ul {
 }
 
 .open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1188,6 +1163,7 @@ ul {
 
 @media only screen and (min-width: 900px) {
   .open {
+    display: block;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
