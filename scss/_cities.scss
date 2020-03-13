@@ -1,6 +1,4 @@
-// .section-1{
-// //   min-height:100vh;
-// }
+
 .place-holder{
     height:1vh;
 }
@@ -15,7 +13,6 @@
     text-align: center;
     border:2px solid black; 
     border-radius: 10% / 50%;
-    // text-shadow: 3px 3px rgb(255, 255, 255);
     margin:auto; 
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -87,7 +84,6 @@
     color: red;
   }
 .popup .content {
-    // max-height: 30%;
     overflow: auto;
   }
 
@@ -105,9 +101,6 @@
     align-items: center;
     justify-content: center;
     z-index:1;
-    // @include laptop{
-    //     height: 60vh; 
-    //  }
 }
 
 
@@ -116,7 +109,6 @@
     transition: all 0.3s;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    // position: absolute;
 }
 
 .word{

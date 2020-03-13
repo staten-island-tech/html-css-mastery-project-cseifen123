@@ -1,15 +1,11 @@
 $primary: F4EAD0; 
 $font-1: 'Bangers', cursive; 
 $font-2:'Anton', sans-serif;
-
-
 $tablet: 600px;
 $desktop: 1100px;
 $laptop: 900px; 
 $tablet-2: 1100px;
 
-// $tablet-2: 800px;
-//900
 
 
 @mixin desktop{
@@ -17,10 +13,8 @@ $tablet-2: 1100px;
       @content;
     }
   }
-  
 @mixin laptop{
     @media only screen and (min-width: #{$laptop}) {
-      //  .col-t1{width: 30%;}
       @content;
     }
   }
@@ -34,9 +28,4 @@ $tablet-2: 1100px;
       @content;
     }
   }
-// @mixin tablet-2{
-//   @media(min-width: #{$tablet-2}) {
-//     @content;
-//   }
-// }
   

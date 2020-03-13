@@ -1,6 +1,6 @@
 @import "_variables.scss";
 @import"_cities.scss";
-@import"_beaches.scss";
+@import"_favorites.scss";
 @import "_navigation.scss";
 @import "_food.scss";
 @import "_closing.scss";
@@ -66,7 +66,6 @@ body{
     font-size: 6rem;
     text-shadow: 3px 3px #333;
     letter-spacing: 2rem;
-    // margin-right: -2rem; 
     text-transform: uppercase;
     line-height: 90%; 
     font-family: 'Anton', sans-serif;
@@ -76,8 +75,7 @@ body{
 
     @include tablet {
         font-size: 8rem; 
-        letter-spacing: 3rem;
-        // margin-right: -3rem;  
+        letter-spacing: 3rem; 
     }
     @include laptop {
         font-size: 11rem;
@@ -95,11 +93,9 @@ body{
     animation-timing-function: ease-in;
     @include tablet {
         font-size: 4rem; 
-    //    margin-left: 3rem; 
     }
     @include laptop {
         font-size: 4rem;
-      //  margin-left: 1rem;
     }
     
 }

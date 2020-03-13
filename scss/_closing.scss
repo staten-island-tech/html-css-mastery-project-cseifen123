@@ -1,13 +1,10 @@
 .section-5{
-    //  height: 100vh;
    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-
     background-image: url(../media/hegazy.jpg);
- 
     position: relative; 
     min-height: 100vh;
     background-position: top;
@@ -17,7 +14,6 @@
     @include desktop{
         background-attachment: fixed;
         background-position: center;
-       // background-repeat: no-repeat;
         background-size: cover;
         flex-direction:column; 
        height:100vh;
@@ -26,37 +22,7 @@
         background-size: cover; 
         background-attachment: fixed; 
     }
-
-   // clip-path: polygon(25% 0, 39% 0, 0 52%, 0 34%);
-    //  background-color: blue;
 }
-// .closing-container{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-//     text-align: center;
-//     min-height:100vh;
-//     @include laptop{
-//        flex-direction:column; 
-//        height:100vh;
-//     }
-// }
-
-// // .contain{
-// //     display:flex;
-// //     flex-direction: column;
-// //     align-items: center;
-// //     justify-content: center;
-// //     text-align: center;
-// //     width: 100%;
-// // }
-// .close-cont{
-//     display:flex;
-//     flex-direction:column;
-//     align-items: center;
-//     justify-content:center;
-// }
 
 .iframe-container{
     display:flex;
@@ -75,24 +41,6 @@
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-// .info-container{
-  
-//   display:flex;
-//   align-items:center;
-//   justify-content:center;
-//   padding : 2 rem;  
-
-  
-  
- 
-
-//     flex-direction: column;
-//    // width:100%;
-//    // margin:auto;
-//     @include laptop{
-//         width:100%;
-//     }
-// }
 
 .info{
     background-color:rgba(128, 128, 128, 0.514);
@@ -102,20 +50,17 @@
     justify-content: center;
     flex-direction:column;
     max-width:100%;
-  // width:30%;
     
 }
 
 .button-style{
     display:inline-block;
-   // border:2px solid black;
     color:white;
     padding:1rem;
     font-size:2rem;
     
     text-align:center;
     margin:1rem;
-  //  background-color:rgba(128, 128, 128, 0.514);
     font-family:$font-2;
     @include tablet{
         font-size:3rem; 
@@ -129,7 +74,6 @@
     display: none;
     position: relative;
     background-color: #f1f1f1;
-   // min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -143,21 +87,15 @@
 .material-icons.icon-arrow:hover{
     color:blue;
     transform:translate(0,-5px);
-    //top: -10px;
 }
 
 
 .info:hover  .arrow-click-2{
-    // opacity:1;
-    // z-index:3;
     display:block;
-   // overflow: auto;
 }
 .temp:target  .arrow-click-2{
-    // opacity:1;
-    // z-index:3;
+
     display:block;
-  // overflow: auto;
 }
 
 
@@ -168,19 +106,7 @@
     font-size: 3rem;
     color:white;
     background-color:red;
-    //visibility: hidden;
 }
-
-// .temp{
-//     background-color: black;
-//     height:20px;
-//     width:20px;
-// }
-
-// #reference:target{
-//     display:block;
-// }
-
 
 
 .drop-item {
@@ -198,19 +124,6 @@
         width:50rem;
         padding:3rem;
     }
-    
-//     font-family: $font-2;
-//     position: relative;
-//     display: block;
-     // width: 45%;
-//    // max-width:100%;
-//     vertical-align: top;
-//     font-size: 1.5rem;
-//     color: white;
-//     margin:2rem;
-//     @include laptop{
-//         width:25%;
-//         font-size: 2rem;
 }
 
 .drop-toggle {
@@ -221,20 +134,12 @@
   transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
         display:block;
-      //  border-radius: 20px;
-     // display: block;
-     //position: relative;
       width: 100%; 
       padding:2rem;
       border: 0 solid #3F5B62;
       border-width: 0 0 1px 1px;
       outline: none !important;
-     // background: rgba(128, 128, 128, 0.795);
-    //  background: rgba(128, 128, 128, 0.555);
-    //background-image: url(../media/hegazy.jpg);
     background-image: linear-gradient(beige, orange, beige);
-     //background: rgba(255, 199, 78, 0.795); //color of button
-     //background-color:none;
       text-align: center;
       transition: .5s;
       font-family: $font-2;
@@ -247,37 +152,26 @@
       
       
 
-     // @include laptop{
+
         &:hover {
-        // background: rgb(97, 97, 97);
-           // background: rgb(82, 82, 82);
-          //  background: rgba(82, 82, 82, 0.658);
           opacity:0.7;
         }
         &:focus {
-           // background:rgb(82, 82, 82) ; //color of button when you click
-          // background: rgba(82, 82, 82, 0.658);
           opacity:0.7;
             & + .round {
              opacity: 1;
-            // font-size: 2rem;
              visibility: visible;
              display:block;
             }
         }
         @include tablet-2{
             &:hover {
-                // background: rgb(97, 97, 97);
-                 //background: rgb(82, 82, 82);
                  opacity:0.7;
                }
-              // Toggle dropdown - use :hover or :focus
               &:hover {
-               // background:rgb(82, 82, 82) ;//color of button when you click
                 opacity:0.7;
                 & + .round {
                  opacity: 1;
-                 //font-size: 1.5rem;
                  visibility: visible;
                  display:block;
                  @include laptop{
@@ -287,9 +181,7 @@
                 }
               }
             
-          }
-      //}
-      
+          }    
 }
 
 .round-class:hover{
@@ -297,42 +189,31 @@
   -webkit-transform:scaleX(1);
 }
     
-// &:first-child .drop-toggle {
-//       border-left-width: 0;
-//      // max-width:100%;
-// }
+
   
 .round {
   
  display: collapse; 
-   // position: absolute;
-      font-family: $font-2;
-      color:white;
-      //font-size:1.5rem;
-      //position: absolute;
-      //position: relative;
-      top: 100%;
-      left: 0;
-      right: -1px;
-      margin: -1px 0 0 0;
-      padding: 10px;
-     // background: hsl(200, 8%, 22%);
-     background:rgb(129, 127, 127);
-      border: 1px solid #3F5B62;
-      border-radius: 0 0 5px 5px;
-      list-style: none;
-    //  z-index: -1;
-      visibility: collapse;
-      // Transition
-     // visibility: collapse;
-      opacity: 0;
-      transition-property: opacity, visibility;
-      transition-duration: 500ms;
-      text-align:center;
-      font-size:2rem;
-      @include laptop{
-        font-size:3rem;
-      }
+  font-family: $font-2;
+  color:white;
+  top: 100%;
+  left: 0;
+  right: -1px;
+  margin: -1px 0 0 0;
+  padding: 10px;
+  background:rgb(129, 127, 127);
+  border: 1px solid #3F5B62;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
+  visibility: collapse;
+  opacity: 0;
+  transition-property: opacity, visibility;
+  transition-duration: 500ms;
+  text-align:center;
+  font-size:2rem;
+   @include laptop{
+    font-size:3rem;
+    }
 }
    .round a {
      display:block; 
@@ -341,29 +222,15 @@
     
 
 .open{
-   // display:flex;
-    // position:relative;
-    // display:block;
-    // align-items: center;
-    // justify-content: center;
-    // flex-direction:column;
-    // max-width:100%;
-    // @include laptop{
-    //     flex-direction:row;
-    // }
   display:flex;
   align-items:center;
   justify-content:center;
   padding: 3rem;  
   border-radius: 20px;
-    
-    flex-direction: column;
-   // width:100%;
-   // margin:auto;
+  flex-direction: column;
     @include laptop{
-        display:block;
+      display:block;
       flex-direction:row;
-      //  width:100%;
     }
 }
 
@@ -388,12 +255,7 @@ input[type=text]:focus {
 
 .style-link:hover{
   color:black;
- background-color:$primary;
- // background: linear-gradient(to right, red 50%, blue 50%);
-//background-size: 200% 100%;
-//background-position:left bottom;
-//background: linear-gradient(to right, red 34%, blue 65%);
-//background-size: 300% 100%;
+  background-color:$primary;
 
 }
 

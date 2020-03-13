@@ -34,18 +34,12 @@
  .food-paragraph{
     max-width:100%;
     margin: auto;
-    //border:2px solid black;
     color:black;
     line-height: 30px;
-    //font-family:$font-2;
     font-size:1.5rem;
     padding: 2rem;
     border-radius: 20px;
     margin:2rem;
-    //width:100%;
-    @include tablet{
-       //margin-top:4rem;
-    }
     @include laptop{
          font-size:2rem;
     }
@@ -82,12 +76,10 @@
   transition: ease-in 1.5s;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 20px; 
-  //margin:3rem; 
+  border-radius: 20px;  
 }
 
  .slider-image1  {
-   // position: absolute;
     max-width: 100%;
     border-radius: 20px;
     z-index: 1;
@@ -107,7 +99,6 @@
 }
 
 .slider-button{
-    //position: relative;
     display:inline-block;
     height:25px;
     width:25px;
@@ -127,7 +118,6 @@
 }
 
 #slider-image-1:target {
-  // opacity: 1;
     z-index: 2;
 }
 
@@ -144,7 +134,6 @@
 #slider-image-4:target {
     opacity: 1;
     z-index: 2;
-    //background-color: blue;
 }
 .margin{
     margin:3rem;
