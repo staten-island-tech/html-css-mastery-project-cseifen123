@@ -1216,7 +1216,7 @@ body {
 
 @media (min-width: 600px) {
   .header {
-    background-size: cover;
+    background-size: auto;
     background-position: center;
   }
 }
