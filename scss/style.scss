@@ -39,9 +39,11 @@ body{
     // clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
     @include tablet {
        //background-size: cover; 
-       background-size: auto;
+       //background-size: auto;
       // background-attachment: fixed;
         background-position: center;
+        background-origin: content-box;
+     
     }
     @include desktop{
         background-attachment: fixed;
