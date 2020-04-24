@@ -19,6 +19,7 @@
        height:100vh;
     }
     @include tablet{
+        background-image: url(../media/hegazy.jpg);
         background-size: cover; 
         background-attachment: fixed; 
     }
@@ -184,12 +185,6 @@
           }    
 }
 
-.round-class:hover{
-  transform:scaleX(1);
-  -webkit-transform:scaleX(1);
-}
-    
-
   
 .round {
   
@@ -217,9 +212,7 @@
 }
    .round a {
      display:block; 
-    }
-
-    
+}
 
 .open{
   display:flex;
@@ -229,24 +222,10 @@
   border-radius: 20px;
   flex-direction: column;
     @include laptop{
-      display:block;
+     //display:block;
       flex-direction:row;
     }
 }
-
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #555;
-  outline: none;
-}
-
-input[type=text]:focus {
-  background-color: lightblue;
-}
-
 .style-link{
   color:white;
   text-decoration: none;

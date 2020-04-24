@@ -914,6 +914,7 @@
 
 @media (min-width: 600px) {
   .section-5 {
+    background-image: url(../media/hegazy.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
@@ -1104,11 +1105,6 @@
   }
 }
 
-.round-class:hover {
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-}
-
 .round {
   display: collapse;
   font-family: "Anton", sans-serif;
@@ -1162,26 +1158,11 @@
 
 @media only screen and (min-width: 900px) {
   .open {
-    display: block;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-}
-
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #555;
-  outline: none;
-}
-
-input[type=text]:focus {
-  background-color: lightblue;
 }
 
 .style-link {
